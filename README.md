@@ -3,43 +3,52 @@
 
 [TOC]
 
-
-
 ## 7.30诺瓦科技
 
 1. [总线之间的区别和联系?](https://luckywater.top/2019/07/29/SerialBus/)
-
 2. [ARM 指令集可以分为哪六大类?](https://luckywater.top/2019/08/02/ARM体系结构/)
-
 3. [ARM体系结构中的工作状态?](https://luckywater.top/2019/08/02/ARM体系结构/)
-
 4. ARM 和EEPROM之间的通信方式是什么?当时有两个电阻没有焊接出错, 后面焊接完成就正确了?
-
    - 两个电阻属于上拉电阻; I2C的通信方式
-
 5. [Linux的**用户态与内核态 **?](https://luckywater.top/2019/08/02/linux用户和内核/)
+   1. Linux的用户态与内核态 定义?
+   2. Linux的用户态与内核态 **如何切换**的? 
+   3. Linux的用户态与内核态的**通信**方式?
+6. [linux内核裁剪的方式?](/7.30诺瓦科技/linux内核裁剪的方式.md)
+7. [进程间通信有哪几种方式?](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
+   1. 为什么进程间通信需要**内核**?
+   2. 编程题: 进程间通信通过管道pipe实现?
+8. [英文翻译: 关于时钟发生器的英文翻译?](/7.30诺瓦科技/关于时钟发生器的英文翻译.md)
+9. 编程题: 通过互斥量实现线程间的通信?
 
-6. [Linux的用户态与内核态 定义?]((https://luckywater.top/2019/08/02/linux用户和内核/))
+## [8.1大疆嵌入式参考](https://blog.csdn.net/qq_38410730/article/details/80951443)
 
-7. [Linux的用户态与内核态 **如何切换**的? ](https://luckywater.top/2019/08/02/linux用户和内核/)
+1. [TCP与UDP的区别?](https://luckywater.top/2019/05/06/TcpIp/)
 
-8. [Linux的用户态与内核态的**通信**方式?]((https://luckywater.top/2019/08/02/linux用户和内核/))
+2. [linux**目录结构**，选项是/usr、/tmp、/etc目录的作用?](/8.1Dji大疆/linux目录结构.md)
 
-9. [linux内核裁剪的方式?](/7.30诺瓦科技/linux内核裁剪的方式.md)
+3. [OS**内存字节对齐** pragma pack()用法详解?](https://luckywater.top/2019/08/02/PragmaPack/)
 
-10. [进程间通信有哪几种方式?](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
+   1. 32位/64位的系统中, 各自的sizeof()是多少?
 
-    1. 为什么进程间通信需要**内核**?
-    2. 编程题: 进程间通信通过管道pipe实现?
+   2. 数据类型间的混合运算, 最后的输出?
 
-11. 英文翻译: 关于时钟发生器的英文翻译?
+4. [大端和小端存储问题问题?](/8.1Dji大疆/大端小端存储问题.md)
 
-    ```
-    A clock generator is a type of circuit that produces acontinuous, sychronized electrical signal for timing purposes in a widevarity of devices work together in an efficient manner, clock generators are often a necessary component in many devices in order toensuure that all other components work harmoniously.
-    
-    时钟发生器是一种电路，其产生连续的，同步的电信号用于定时目的，在广泛的设备中以有效的方式协同工作，时钟发生器通常是许多设备中的必要组件，以便确保所有其他组件协调地工作。
-    ```
+5. [C语言的**各种变量的存取区域**，给你一段小程序，让你分析各个变量的存储区域?](/8.1Dji大疆/C变量存储区域.md)
 
-12. 编程题: 通过互斥量实现线程间的通信?
+6. [C中使用memcpy()系列函数时要足够小心?](/8.1Dji大疆/C函数使用注意.md)
 
-    
+7. [C语言**编译执行**的四个阶段?](/8.1Dji大疆/C语言编译执行的四个阶段.md)
+
+8. [linux系统打开设备文件，进程可能处于三种基本状态?如果多次打开设备文件，驱动程序应该实现什么?](/8.1Dji大疆/linux系统打开设备文件处于的状态.md)
+
+9. [C简述实时操作系统和非实时操作系统特点和区别?](/8.1Dji大疆/C的static作用.md)
+
+10. [OS无锁可以提高整个程序的性能，但是CPU需要对此提供支持，请以x86/ARM为例简述](/8.1Dji大疆/cpu对锁的支持.md)
+
+11. [编程题:  实现一个循环缓冲区.](https://github.com/quronghui/OSIntroduction/blob/master/6_circularBuffe/circularReadWrite.c)
+
+## 8.3网易笔试
+
+1. [Linux 系统权限755 777 644 ?]()

@@ -9,5 +9,5 @@
    + 硬实时:  要求在规定的**时间内必须完成**操作，这是在操作系统设计时保证的；
    + 软实时:  则只要按照**任务的优先级**，**尽可能快**地完成操作即可。
 
-   ![emebeded_OS.png](/8.1Dji大疆/emebeded_OS.png)
+   ![emebeded_OS.png](/8.1Dji大疆/photo/emebeded_OS.png)
 

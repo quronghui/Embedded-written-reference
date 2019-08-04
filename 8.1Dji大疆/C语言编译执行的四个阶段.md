@@ -2,7 +2,7 @@
 
 1. C语言**编译执行**的四个阶段？
 
-    ![Cobject_link.png](/8.1Dji大疆/Cobject_link.png)
+    ![Cobject_link.png](/8.1Dji大疆/photo/Cobject_link.png)
 
    1. 预编译:
       - "#" 相关的语句: 进行展开;

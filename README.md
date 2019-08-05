@@ -22,24 +22,23 @@
    2. Linux的用户态与内核态 **如何切换**的? 
    3. Linux的用户态与内核态的**通信**方式?
 6. [linux内核裁剪的方式?](/7.30诺瓦科技/linux内核裁剪的方式.md)
-7. **未全部完成 -- **[进程间通信有哪几种方式?](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
+7. *未全部完成 --*    [进程间通信有哪几种方式?](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
    1. 为什么进程间通信需要**内核**?
    2. 编程题: 进程间通信通过管道pipe实现?
 8. [英文翻译: 关于时钟发生器的英文翻译?](/7.30诺瓦科技/关于时钟发生器的英文翻译.md)
 9. 编程题: 通过互斥量实现线程间的通信?
 
-## 大疆嵌入式参考
+## 8.1号大疆嵌入式参考
 
 + [参考](https://blog.csdn.net/qq_38410730/article/details/80951443)
 
 1. [TCP与UDP的区别?](https://luckywater.top/2019/05/06/TcpIp/)
 
 3. [OS**内存字节对齐** pragma pack()用法详解?](https://luckywater.top/2019/08/02/PragmaPack/)
-
-   1. 32位/64位的系统中, 各自的sizeof()是多少?
-
-   2. 数据类型间的混合运算, 最后的输出?
-
+1. 32位/64位的系统中, 各自的sizeof()是多少?
+   
+2. 数据类型间的混合运算, 最后的输出?
+   
 3. [OS大端和小端存储问题问题?](/8.1Dji大疆/大端小端存储问题.md)
 
 4. [OS无锁可以提高整个程序的性能，但是CPU需要对此提供支持，请以x86/ARM为例简述](/8.1Dji大疆/cpu对锁的支持.md)
@@ -66,11 +65,18 @@
 
 15. [linux系统打开设备文件，进程可能处于三种基本状态?如果多次打开设备文件，驱动程序应该实现什么?](/8.1Dji大疆/linux系统打开设备文件处于的状态.md)
 
-16. **未全部完成 -- **[Linux内核中常用的两个宏定义?](/8.1Dji大疆/linux内核中常用的两个宏定义.md)
+16. *未全部完成 --*[Linux内核中常用的两个宏定义?](/8.1Dji大疆/linux内核中常用的两个宏定义.md)
 
-17. [编程题:  实现一个循环缓冲区.](https://github.com/quronghui/OSIntroduction/blob/master/6_circularBuffe/circularReadWrite.c)
+17. [编程题:  实现一个循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
 
-    
+### 8.4 大疆笔试
+
+1.  [C : 当char类型变量进行赋值时, 超过其范围时怎么处理?](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/charConvertint.c)
+2. [C: 有符号的变量(负数)和无符号的变量(正数)相加](/8.1Dji大疆/C 有符号的变量(负数)和无符号的变量(正数)相加.md)
+3. [C: 如何实现一个数的四舍五入?]
+4. [OS 结构体和联合体的**内存字节**对齐计算?](https://luckywater.top/2019/08/02/PragmaPack/)
+5. *未全部完成 --* [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
+6. 
 
 ## 8.3网易笔试
 

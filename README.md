@@ -87,12 +87,13 @@
 
 1.  [C : 当char类型变量进行赋值时, 超过其范围时怎么处理?](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/charConvertint.c)
 2. [C: 有符号的变量(负数)和无符号的变量(正数)相加](/8.1Dji大疆/C 有符号的变量(负数)和无符号的变量(正数)相加.md)
-3. [C: 如何实现一个数的四舍五入?]
-4. [OS 结构体和联合体的**内存字节**对齐计算?](https://luckywater.top/2019/08/02/PragmaPack/)
-5. *未全部完成 --* [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
-6.  [OS 简述一个执行程序在运行时的内存布局?]( /8.1Dji大疆/OS简述一个执行程序在运行时的内存布局.md)
-7.  [OS 嵌入式系统中共享资源的访问限制, 需要描述其占用空间的大小?](/8.1Dji大疆/OS简述线程之间的同步互斥, 需要描述其占用空间的大小.md)
-8.  [Online Judge :  忽略字母大小写的差异, 实现字符串比较?](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/strncmp.c)
+3.  [C: 关键词的描述](/8.1Dji大疆/C关键词的描述.md)
+4.  [C: 如何实现一个数的四舍五入?]
+5.  [OS 结构体和联合体的**内存字节**对齐计算?](https://luckywater.top/2019/08/02/PragmaPack/)
+6.  *未全部完成 --* [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
+7.  [OS 简述一个执行程序在运行时的内存布局?]( /8.1Dji大疆/OS简述一个执行程序在运行时的内存布局.md)
+8.  [OS 嵌入式系统中共享资源的访问限制, 需要描述其占用空间的大小?](/8.1Dji大疆/OS简述线程之间的同步互斥, 需要描述其占用空间的大小.md)
+9.  [Online Judge :  忽略字母大小写的差异, 实现字符串比较? (bit操作)](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/strncmp.c)
 
 ## 8.3网易笔试
 

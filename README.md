@@ -92,7 +92,7 @@
 5.  [OS 结构体和联合体的**内存字节**对齐计算?](https://luckywater.top/2019/08/02/PragmaPack/)
 6.  *未全部完成 --* [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
 7.  [OS 简述一个执行程序在运行时的内存布局?]( /8.1Dji大疆/OS简述一个执行程序在运行时的内存布局.md)
-8.  [OS 简述线程之间的同步互斥, 需要描述其占用空间的大](/8.1Dji大疆/OS简述线程之间的同步互斥, 需要描述其占用空间的大小.md)
+8.  [OS 简述线程之间的同步互斥, 需要描述其占用空间的大]( /8.1Dji大疆/OS简述线程之间的同步互斥, 需要描述其占用空间的大小.md)
 9.  [Online Judge :  忽略字母大小写的差异, 实现字符串比较? (bit操作)](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/strncmp.c)
 
 ## 8.3网易笔试

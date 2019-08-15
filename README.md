@@ -86,7 +86,7 @@
 ### 8.4 大疆笔试
 
 1.  [C : 当char类型变量进行赋值时, 超过其范围时怎么处理?](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/charConvertint.c)
-2. [C: 有符号的变量(负数)和无符号的变量(正数)相加](/8.1Dji大疆/C 有符号的变量(负数)和无符号的变量(正数)相加.md)
+2. [C: 有符号的变量(负数)和无符号的变量(正数)相加](/8.1Dji大疆/C有符号的变量和无符号的变量相加.md)
 3.  [C: 关键词的描述](/8.1Dji大疆/C关键词的描述.md)
 4.  [C: 如何实现一个数的四舍五入?]
 5.  [OS 结构体和联合体的**内存字节**对齐计算?](https://luckywater.top/2019/08/02/PragmaPack/)

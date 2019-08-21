@@ -55,7 +55,6 @@
 1. [TCP与UDP的区别?](https://luckywater.top/2019/05/06/TcpIp/)
 2. [OS**内存字节对齐** pragma pack()用法详解?](https://luckywater.top/2019/08/02/PragmaPack/)
    1. 32位/64位的系统中, 各自的sizeof()是多少?
-      
    2. 数据类型间的混合运算, 最后的输出?
 3. [OS大端和小端存储问题问题?](/8.1Dji大疆/大端小端存储问题.md)
 4. [OS无锁可以提高整个程序的性能，但是CPU需要对此提供支持，请以x86/ARM为例简述](/8.1Dji大疆/cpu对锁的支持.md)
@@ -79,7 +78,7 @@
 
 1.  [C : 当char类型变量进行赋值时, 超过其范围时怎么处理?](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/charConvertint.c)
 2. [C: 有符号的变量(负数)和无符号的变量(正数)相加](/8.1Dji大疆/C有符号的变量和无符号的变量相加.md)
-3.  [C: 关键词的描述](/8.1Dji大疆/C关键词的描述.md)
+3.  [C: 关键字的描述](/8.1Dji大疆/C关键词的描述.md)
 4.  [C: 如何实现一个数的四舍五入?]
 5.  [OS 结构体和联合体的**内存字节**对齐计算?](https://luckywater.top/2019/08/02/PragmaPack/)
 6.  *未全部完成 --* [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
@@ -91,7 +90,7 @@
 
 1. 自我介绍和项目的描述?
 2. [OS cache缓存一致性描述?](/8.1Dji大疆/OScache缓存一致性描述.md)
-3. [OS cache多任务调度描述?](/8.1Dji大疆/OScache多任务调度描述.md)
+3. [OS cache(页面)多任务调度描述?](/8.1Dji大疆/OScache多任务调度描述.md)
 4. [Linux 多任务, 进程, 线程之间的关系?](/8.1Dji大疆/Linux多任务进程线程之间的关系.md)
 5. [Linux查询进程和线程数量?](/8.1Dji大疆/Linux查询进程和线程数量.md)
 6. *未全部完成 --[嵌入式实时操作系统描述?](/8.1Dji大疆/OS嵌入式实时操作系统描述.md)
@@ -101,7 +100,36 @@
 ## 8.3网易笔试
 
 1. [Linux 系统权限755 777 644 ?](/8.3网易/LInux系统权限.md)
-2. 没做出来 -- [echo 重定义 和 grep 正则表达式匹配](/8.3网易/echo 重定义 和 grep 正则表达式匹配.md)
+2. 没做出来 -- [echo 重定义 和 grep 正则表达式匹配](/8.3网易/echo重定义和grep正则表达式匹配.md)
 3. [Dijkstra最短路径算法的描述正确的是?](/8.3网易/Dijkstra最短路径算法的描述.md)
 4. [TCP IP 数据传输中, 数据如何进行分包?](/8.3网易/TCPIP数据分包.md)
 5. [二叉树8个度为2节点, 5个度为1节点 , 度为0有多少个节点?](/8.3网易/二叉树节点和度.md)
+
+## TCP/IP
+
+1. [DNS服务器是如何工作的?](/TCP/DNS服务器是如何工作的.md)
+2. [OSI七层中的硬件设备](/TCP/OSI七层中的硬件设备.md)
+3. [http建立的过程?]
+
+## C语言
+
+1. [C指针和引用的区别?](/C/指针和引用的区别.md)
+2. [C变量的生命周期?](/C/C变量的生命周期.md)
+
+## shell
+
+1. [Linux把名称中含有test内容的进程找出来杀死?](/shell/Linux把名称中含有test内容的进程找出来杀死.md)
+2. [Linux读取某个文件的某一行或者某几行, 使用sed](/shell/Linux读取某个文件的某一行或者某几行.md)
+3. [Linux 磁盘整体情况](/shell/磁盘整体情况.md)
+4. [grep邮件地址正则表达式的匹配书写](https://luckywater.top/2019/04/25/Regular-Expression/)
+
+## dataStruct
+
+1. [B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/B, B-, B+树的定义，特性，联系与区别.md)
+2. [图的表示和存储](/dataStruct/图的表示和存储.md)
+
+## OS
+
+1. [OS内存泄漏的理解](/OS/内存泄漏的理解.md)
+
+看到了: 刘真真-作业帮-后台面试-二面

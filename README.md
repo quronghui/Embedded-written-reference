@@ -109,12 +109,15 @@
 
 1. [DNS服务器是如何工作的?](/TCP/DNS服务器是如何工作的.md)
 2. [OSI七层中的硬件设备](/TCP/OSI七层中的硬件设备.md)
-3. [http建立的过程?]
+3. [Socket建立连接过程](/TCP/Socket建立连接过程.md)
+4. [http和TCP之间的关联, http建立链接的过程?](/TCP/http和TCP之间的关联.md)
+5. [https怎么保证安全的？讲讲数字签名的过程]
 
 ## C语言
 
 1. [C指针和引用的区别?](/C/指针和引用的区别.md)
 2. [C变量的生命周期?](/C/C变量的生命周期.md)
+3. [C什么是左值，什么是右值]
 
 ## shell
 
@@ -125,11 +128,18 @@
 
 ## dataStruct
 
-1. [B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/B, B-, B+树的定义，特性，联系与区别.md)
+1. [B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/树的联系与区别.md)
 2. [图的表示和存储](/dataStruct/图的表示和存储.md)
+3. [排序算法的介绍和时间复杂度] 
 
 ## OS
 
 1. [OS内存泄漏的理解](/OS/内存泄漏的理解.md)
+2. [OS中信号量, 互斥体, 自旋锁的概念](/OS/OS信号量互斥体自旋锁的概念.md)
+3. [Linux kernel原理]
+4. [Linux软中断, 软件中断 和硬件中断的区别](/OS/Linux中断之间区别.md)
+5. [Linux中断分层的概念](/OS/Linux中断分层的概念.md)
+6. [Linux总线驱动模型platform](OS/Linux驱动模型platform.md)
+7. [Linux字符驱动和块驱动模型](/OS/Linux字符驱动和块驱动模型.md)
 
-看到了: 刘真真-作业帮-后台面试-二面
++ [参考链接](https://blog.csdn.net/LIJJ1993/article/details/82118483)

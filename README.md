@@ -1,14 +1,25 @@
 # Embedded-written-reference
 + 2019-参加过的嵌入式笔试题目和解析分享
 
-+ Table of Contents
-  =================
+## Content
 
-     * [Embedded-written-reference](#embedded-written-reference)
-        * [Contents](#contents)
-        * [7.30诺瓦科技](#730诺瓦科技)
-        * [8.1大疆嵌入式参考](#81大疆嵌入式参考)
-        * [8.3网易笔试](#83网易笔试)
+   * [Embedded-written-reference](#embedded-written-reference)
+   + [Table of Contents](#table-of-contents)
+      * [诺瓦科技](#诺瓦科技)
+         * [7.30笔试题](#730笔试题)
+         * [8.12 面试题(胡HR)](#812-面试题胡hr)
+      * [8.1号大疆嵌入式参考](#81号大疆嵌入式参考)
+         * [8.4 大疆笔试](#84-大疆笔试)
+         * [8.15 大疆初面](#815-大疆初面)
+      * [8.3网易笔试](#83网易笔试)
+      * [TCP/IP](#tcpip)
+      * [C语言](#c语言)
+      * [shell](#shell)
+      * [dataStruct](#datastruct)
+      * [OS](#os)
+         * [Linux 中断](#linux-中断)
+         * [Linux 驱动](#linux-驱动)
+         * [Operate System](#operate-system)
 
 ## 诺瓦科技
 
@@ -59,15 +70,13 @@
 3. [OS大端和小端存储问题问题?](/8.1Dji大疆/大端小端存储问题.md)
 4. [OS无锁可以提高整个程序的性能，但是CPU需要对此提供支持，请以x86/ARM为例简述](/8.1Dji大疆/cpu对锁的支持.md)
 5. [OS多任务嵌入式系统中，将寄存器REGn的指定位反转](/8.1Dji大疆/OS嵌入式系统指定位反转.md)
-6. [OS简述处理器中断处理的过程](/8.1Dji大疆/OS嵌入式系统指定位反转.md)
 7. [OS简述 处理器读取内存的过程](/8.1Dji大疆/OS处理器读取内存的过程.md)
 8. [OS系统设计]
-9. [OS 中断处理过程的描述?](/8.1Dji大疆/OS中断处理过程的描述.md)
 10. [OS 如何实现进程间的切换?](/8.1Dji大疆/OS如何实现进程间的切换.md)
 11. [C语言的**各种变量的存取区域**，给你一段小程序，让你分析各个变量的存储区域?](/8.1Dji大疆/C变量存储区域.md)
 12. [C中使用memcpy()系列函数时要足够小心?](/8.1Dji大疆/C函数使用注意.md)
 13. [C语言**编译执行**的四个阶段?](/8.1Dji大疆/C语言编译执行的四个阶段.md)
-14. [C简述实时操作系统和非实时操作系统特点和区别?](/8.1Dji大疆/C的static作用.md)
+14. [C简述实时操作系统和非实时操作系统特点和区别?](/8.1Dji大疆/OS实时和非实时性.md)
 15. [简述**C函数中参数**传递问题](/8.1Dji大疆/简述C函数中参数传递问题.md)
 16. [linux**目录结构**，选项是/usr、/tmp、/etc目录的作用?](/8.1Dji大疆/linux目录结构.md)
 17. [linux系统打开设备文件，进程可能处于三种基本状态?如果多次打开设备文件，驱动程序应该实现什么?](/8.1Dji大疆/linux系统打开设备文件处于的状态.md)
@@ -78,7 +87,7 @@
 
 1.  [C : 当char类型变量进行赋值时, 超过其范围时怎么处理?](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/charConvertint.c)
 2. [C: 有符号的变量(负数)和无符号的变量(正数)相加](/8.1Dji大疆/C有符号的变量和无符号的变量相加.md)
-3.  [C: 关键字的描述](/8.1Dji大疆/C关键词的描述.md)
+3.  [C: 关键字用途的描述](/8.1Dji大疆/C关键词的描述.md)
 4.  [C: 如何实现一个数的四舍五入?]
 5.  [OS 结构体和联合体的**内存字节**对齐计算?](https://luckywater.top/2019/08/02/PragmaPack/)
 6.  *未全部完成 --* [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
@@ -109,9 +118,10 @@
 
 1. [DNS服务器是如何工作的?](/TCP/DNS服务器是如何工作的.md)
 2. [OSI七层中的硬件设备](/TCP/OSI七层中的硬件设备.md)
-3. [Socket建立连接过程](/TCP/Socket建立连接过程.md)
-4. [http和TCP之间的关联, http建立链接的过程?](/TCP/http和TCP之间的关联.md)
-5. [https怎么保证安全的？讲讲数字签名的过程]
+3. [TCP三次握手和四次挥手](/TCP/TCP三次握手和四次挥手.md)
+4. [Socket建立连接过程](/TCP/Socket建立连接过程.md)
+5. [http和TCP之间的关联, http建立链接的过程?](/TCP/http和TCP之间的关联.md)
+6. [https怎么保证安全的？讲讲数字签名的过程]
 
 ## C语言
 
@@ -134,12 +144,22 @@
 
 ## OS
 
+### Linux 中断
+
+1. [中断的定义 和 中断处理过程的描述?](/8.1Dji大疆/OS中断处理过程的描述.md)
+2. [Linux软中断, 软件中断 和硬件中断的区别](/OS/Linux中断之间区别.md)
+3. [Linux中断分层和中断嵌套的概念](/OS/Linux中断分层的概念.md)
+4. [进程上下文切换 VS 中断上下文切换](/OS/Linux进程上下文切换和中断上下文切换.md)
+
+### Linux 驱动
+
+1. [Linux总线驱动模型platform](OS/Linux驱动模型platform.md)
+2. [Linux字符驱动和块驱动模型](/OS/Linux字符驱动和块驱动模型.md)
+
+### Operate System
+
 1. [OS内存泄漏的理解](/OS/内存泄漏的理解.md)
 2. [OS中信号量, 互斥体, 自旋锁的概念](/OS/OS信号量互斥体自旋锁的概念.md)
 3. [Linux kernel原理]
-4. [Linux软中断, 软件中断 和硬件中断的区别](/OS/Linux中断之间区别.md)
-5. [Linux中断分层的概念](/OS/Linux中断分层的概念.md)
-6. [Linux总线驱动模型platform](OS/Linux驱动模型platform.md)
-7. [Linux字符驱动和块驱动模型](/OS/Linux字符驱动和块驱动模型.md)
 
 + [参考链接](https://blog.csdn.net/LIJJ1993/article/details/82118483)

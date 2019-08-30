@@ -34,6 +34,7 @@
    1. Linux的用户态与内核态 定义?
    2. Linux的用户态与内核态 **如何切换**的? 
    3. Linux的用户态与内核态的**通信**方式?
+   4. linux中内存划分及如何使用？虚拟地址及物理地址的概念及彼此之间的转化，高端内存概念？
 6. [linux内核裁剪的方式?](/7.30诺瓦科技/linux内核裁剪的方式.md)
 7. *未全部完成 --*    [进程间通信有哪几种方式?](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
    1. 为什么进程间通信需要**内核**?
@@ -44,20 +45,15 @@
 
 ### 8.12 面试题(胡HR)
 
-+ 缺点: 回答的太官方了, 只有理论没有具体实践;
-+ 主要是分为两大块: 外设通信方式, Linux系统的问题;
-
 1. [万用表, 示波器采集数据的要求?](7.30诺瓦科技/示波器采集数据的要求.md)
 3. Linux的具体的命令, 文件操作的5个命令?
 4. Makefile文件的编写?
 6. [TCP/IP物理层的具体内容是啥?](7.30诺瓦科技/tcp物理层的具体内容.md)
 7. 驱动这款需要看, Uboot需要去看一下?
+   
    + 网络驱动和字符驱动
-8. 简历上项目的具体问题?
-   + 建立要写明确具体用的方式和处理细节?
-   + 用的主控, 和主控间的通信方式?
-
-
+   
+   
 
 ## 8.1号大疆嵌入式参考
 
@@ -67,7 +63,7 @@
 2. [OS**内存字节对齐** pragma pack()用法详解?](https://luckywater.top/2019/08/02/PragmaPack/)
    1. 32位/64位的系统中, 各自的sizeof()是多少?
    2. 数据类型间的混合运算, 最后的输出?
-3. [OS大端和小端存储问题问题?](/8.1Dji大疆/大端小端存储问题.md)
+3. [OS大端和小端存储问题?](/8.1Dji大疆/大端小端存储问题.md)
 4. [OS无锁可以提高整个程序的性能，但是CPU需要对此提供支持，请以x86/ARM为例简述](/8.1Dji大疆/cpu对锁的支持.md)
 5. [OS多任务嵌入式系统中，将寄存器REGn的指定位反转](/8.1Dji大疆/OS嵌入式系统指定位反转.md)
 7. [OS简述 处理器读取内存的过程](/8.1Dji大疆/OS处理器读取内存的过程.md)
@@ -91,7 +87,7 @@
 4.  [C: 如何实现一个数的四舍五入?]
 5.  [OS 结构体和联合体的**内存字节**对齐计算?](https://luckywater.top/2019/08/02/PragmaPack/)
 6.  *未全部完成 --* [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
-7.  [OS 简述一个执行程序在运行时的内存布局?]( /8.1Dji大疆/OS简述一个执行程序在运行时的内存布局.md)
+7.  [OS 简述一个程序在编译运行时的内存布局?]( /8.1Dji大疆/OS简述一个执行程序在运行时的内存布局.md)
 8.  [OS简述线程之间的同步互斥时占用空间的大小]( /8.1Dji大疆/OS简述线程之间的同步互斥时占用空间的大小.md)
 9.  [Online Judge :  忽略字母大小写的差异, 实现字符串比较? ](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/strncmp.c)
 
@@ -113,6 +109,17 @@
 3. [Dijkstra最短路径算法的描述正确的是?](/8.3网易/Dijkstra最短路径算法的描述.md)
 4. [TCP IP 数据传输中, 数据如何进行分包?](/8.3网易/TCPIP数据分包.md)
 5. [二叉树8个度为2节点, 5个度为1节点 , 度为0有多少个节点?](/8.3网易/二叉树节点和度.md)
+
+## 8.24 海康威视
+
+1. [C中全局变量和局部变量可以重名吗?](/8.24HIK/C中全局变量和局部变量可以重名.md)
+2. [C宏使用,  实现对一个变量的bit2置位操作](/8.24HIK/C宏使用.md)
+3. [C宏使用,  求一个数组元素的个数](/8.24HIK/C宏求一个数组元素的个数.md)
+4. [C 中变量名的命名规则?]
+5. [list -- 为一个链表设置一个head和tail, 链表的操作哪一个和长度相关?](/8.24HIK/list相关操作.md)
+6. [list -- 哪一种数据结构, 只能顺序访问?](/8.24HIK/list相关操作.md)
+7. [OS 如何判断内存存储, 是大端存储还是小端存储](/8.1Dji大疆/大端小端存储问题.md)
+8. [Linux 中断ISR函数的特点](/8.1Dji大疆/OS中断处理过程的描述.md)
 
 ## TCP/IP
 
@@ -139,8 +146,8 @@
 
 ## dataStruct
 
-1. [B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/树的联系与区别.md)
-2. [图的表示和存储](/dataStruct/图的表示和存储.md)
+1. [Tree  -- B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/树的联系与区别.md)
+2. [Graph -- 图的表示和存储](/dataStruct/图的表示和存储.md)
 3. [数据结构中堆、栈和队列的理区别?](/dataStruct/数据结构中堆、栈和队列的理区别.md)
 4. [排序算法的介绍和时间复杂度] 
 
@@ -151,20 +158,67 @@
 1. [中断的定义 和 中断处理过程的描述?](/8.1Dji大疆/OS中断处理过程的描述.md)
 2. [Linux软中断, 软件中断 和硬件中断的区别](/OS/Linux中断之间区别.md)
 3. [Linux中断分层和中断嵌套的概念](/OS/Linux中断分层的概念.md)
-4. [进程上下文切换 VS 中断上下文切换](/OS/Linux进程上下文切换和中断上下文切换.md)
+4. [linux系统调用的过程？]
+5. [进程上下文切换 VS 中断上下文切换](/OS/Linux进程上下文切换和中断上下文切换.md)
+6. [linux中系统调用过程？简述read()的系统调用过程？](/OS/linux中系统调用过程.md)
 
 ### Linux 驱动
 
++ 驱动模型
+
 1. [Linux总线驱动模型platform](OS/Linux驱动模型platform.md)
+
 2. [Linux字符驱动和块驱动模型](/OS/Linux字符驱动和块驱动模型.md)
-3. [DMA的原理]
-4. [PCI总线的工作方式]
+
+3. [驱动中的一些查看命令? insomd和rmmod注意情况](/OS/驱动中的一些查看命令.md)
+
+4. [主设备号和次设备号的用途？字符设备的注册方法？](/OS/主设备号和次设备号的用途.md)
+
+5. [ IIC原理，总线框架，设备编写方法，i2c_msg]
+
+   + ​     https://www.cnblogs.com/hongzhunzhun/p/4533960.html
+
+     ​     https://www.cnblogs.com/wuchanming/p/4465155.html
+
+6. [linux内核出现Oops段错误信息?](/OS/Oops.md)
+
+7. [文件操作中控制函数：ioctl和unlock_ioctl的区别](/OS/ioctl和unlock_ioctl的区别.md)
+
+8. [如何写C嵌入式的死循环](/OS/如何写C嵌入式的死循环/md)
+
+9. [如何理解嵌入式的volatile变量？](/OS/嵌入式的volatile变量.md)
+
++ 内核kernel
+
+1. [Uboot如何给kernel传参数？(ARM结构下)](/OS/Uboot如何给kernel传参数.md)
+2. [Linux内核启动流程?](/OS/Linux内核启动流程.md)
+3. [linux中netfilter的实现机制？是如何实现对特定数据包进行处理(如过滤，NAT之类的)及HOOK点的注册？](/OS/linux中netfilter的实现机制.md)
+4. [ARM体系结构下的MMU如何实现映射？](/OS/ARM体系结构下的MMU如何实现映射)
+5. [linux驱动中操作物理绝对地址为什么要先ioremap?](/OS/linux的ioremap.md)
+6. [ Linux抽象出framebuffer这个设备的作用？](/OS/Linux抽象出framebuffer这个设备的作用.md)
+7. [kernel panic？]
+   + ​     https://www.cnblogs.com/cherishui/p/3881428.html
+
++ 同步实现
+
+1. [Linux中的RCU(读-复制-更新)的原理？](/OS/Linux中的RCU.md)
+2. [Linux实现原子操作的方法有哪些？](/OS/Linux实现原子操作的方法有哪些.md)
+
++ other
+
+1. [Linux产生僵尸进程的原因？](https://luckywater.top/2019/04/22/system-process/)
+2. [DMA的原理]
+3. [PCI总线的工作方式]
 
 ### Operate System
 
 1. [OS内存泄漏的理解](/OS/内存泄漏的理解.md)
 2. [OS中信号量, 互斥体, 自旋锁的概念](/OS/OS信号量互斥体自旋锁的概念.md)
 3. [Linux内核的五个模块描述](/OS/Linux内核的五个模块描述.md)
-4. [Linux kernel原理]
+4. [四大CPU体系结构:ARM、X86/Atom、MIPS、PowerPC](/OS/四大CPU体系结构.md)
+5. [MIPS 体系结构cpu地址空间划分](/OS/MIPScpu地址空间划分.md)
+6. [linux 内存管理 malloc 分配用户空间？](/OS/linux内存管理.md)
+7. [内存管理中mmap的原理？](/OS/内存管理中mmap的原理.md)
+8. [内存管理中kmalloc和vmalloc分配内核空间](/OS/内存管理中kmalloc和vmalloc的区别.md)
 
 + [参考链接](https://blog.csdn.net/LIJJ1993/article/details/82118483)

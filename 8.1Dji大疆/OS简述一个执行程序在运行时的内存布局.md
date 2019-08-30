@@ -18,7 +18,7 @@
 
    
 
-2. BSS段（bss segment）
+2. BSS段（bss segment）“Block Started bySymbol”“以符号开始的块”
 
    + 存放 : 程序中**未初始化**的全局变量和静态变量;
      + 未初始化: 没有显示赋值;

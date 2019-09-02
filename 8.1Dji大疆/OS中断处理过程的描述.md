@@ -1,10 +1,21 @@
 ## 简述处理器中断处理的过程
 
-+ 中断服务程序需要满足如下要求：
-  (1)不能返回值；
-  (2)不能向ISR传递参数；
-  (3) ISR应该尽可能的短小精悍；
-  (4) printf(char * lpFormatString,…)函数会带来重入和性能问题，不能在ISR中采用。
+###  中断服务程序需要满足如下要求：
+​	(1)不能返回值；
+​	(2)不能向ISR传递参数；
+​	(3) ISR应该尽可能的短小精悍； --- 不进行浮点类型的计算
+​	(4) printf(char * lpFormatString,…)函数会带来重入和性能问题，不能在ISR中采用。
+
+```
+// 新的关键字__interrupt, 让标准C支持中断；
+// 定义了一个ISR中断服务程序，查找其中的错误；
+__interrupt double compute_area (double radius) 	（1）不能进行传参
+{ 
+	double area = PI * radius * radius; 									(2)  在许多的处理器/编译器中，浮点一般都是不可重入的。
+	printf(” Area = %f”, area); 											（3）printf()经常有重入和性能上的问题
+	return area; 																			（4） 中断不允许返回值的
+}
+```
 
 ### 中断的定义
 

@@ -8,10 +8,11 @@ int const a;		 // 同上
 const int *a; 		// a是一个指向常整型数的指针；整型数是不可修改的，但指针可以
 int	const *a;		//同上
 int * const a; 		// a指向常整型数的常指针；指针指向的整型数是可以修改的，但指针是不可修改
-int const * a const;	//a是一个指向常整型数的常指针；指针指向的整型数是不可修改的，同时指针也是不可修改的
+const int * const a; 
+int const * const a  	//a是一个指向常整型数的常指针；指针指向的整型数是不可修改的，同时指针也是不可修改的
 ```
 
-1. comst的作用？
+1. const的作用？
    + 关键字const的作用是为给读你代码的人传达非常有用的信息，实际上，声明一个参数为常量是为了告诉了用户这个参数的应用目的。
    + 通过给优化器一些附加的信息，使用关键字const也许能产生更紧凑的代码。 
    + 合理地使用关键字const可以使编译器很自然地保护那些不希望被改变的参数，防止其被无意的代码修改。
@@ -39,6 +40,10 @@ volatile int i = 10;
 - sizeof 对数组，得到整个数组所占空间大小。
 - sizeof 对指针，得到指针本身所占空间大小。
 
++ sizeof()是运算符，由于在编译时计算，因此sizeof不能用来返回动态分配的内存空间的大小。
+  + 返回值跟这些里面所存储的内容没有关系
+  + strlen() 返回
+
 ### assert()
 
 断言，是宏，而非函数。assert 宏的原型定义在 `<assert.h>`（C）、`<cassert>`（C++）中，其作用是如果它的条件返回错误，则终止程序执行。可以通过定义 `NDEBUG` 来关闭 assert，但是需要在源代码的开头，`include <assert.h>` 之前。
@@ -62,3 +67,20 @@ volatile int i = 10;
 - 匿名 union 在定义所在作用域可直接访问 union 成员
 - 匿名 union 不能包含 protected 成员或 private 成员
 - 全局匿名联合必须是静态（static）的
+
+### typedef and define
+
+1. typedef 的优势
+
+   ```
+   #define dPS struct s * 			// 宏定义 dPS 表示 struct s*
+   typedef struct s * tPS;			// typedef 表示，将struct *s 重命名为tPS
+   ```
+
+   + 在定义指针变量的时候，哪种方式更好？使用typedef更好；
+
+   ```
+   dPS p1,p2;		-->		扩展为：struct s *p1, p2;  	// 此时只定义了一个指针类型的p1， 另外一个不是；
+   tPS p3,p4;		--> 两个都是指针
+   ```
+

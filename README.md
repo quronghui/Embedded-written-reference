@@ -34,9 +34,10 @@
 2. ARM 和EEPROM之间的通信方式是什么?当时有两个电阻没有焊接出错, 后面焊接完成就正确了?
    - 两个电阻属于上拉电阻; I2C的通信方式
 3. [ARM体系结构下的MMU如何实现映射？](/OS/ARM体系结构下的MMU如何实现映射)
-4. [四大CPU体系结构:ARM、X86/Atom、MIPS、PowerPC](/OS/四大CPU体系结构.md)
-5. [MIPS 体系结构cpu地址空间划分](/OS/MIPScpu地址空间划分.md)
-6. [OS无锁可以提高整个程序的性能，但是CPU需要对此提供支持，请以x86/ARM为例简述](/8.1Dji大疆/cpu对锁的支持.md)
+4. [ARM通过几级页表实现存储空间映射？](/OS/ARM通过几级页表实现存储空间映射.md)
+5. [四大CPU体系结构:ARM、X86/Atom、MIPS、PowerPC](/OS/四大CPU体系结构.md)
+6. [MIPS 体系结构cpu地址空间划分](/OS/MIPScpu地址空间划分.md)
+7. [OS无锁可以提高整个程序的性能，但是CPU需要对此提供支持，请以x86/ARM为例简述](/8.1Dji大疆/cpu对锁的支持.md)
 
 ## 内存管理
 
@@ -54,6 +55,7 @@
    + linux 多级分页目录结构；
    + 伙伴系统和其接口：__get_free_page
    + DMA的原理
+8. [在支持并能使能MMU的系统中，Linux内核和用户程序运行在物理地址还是虚拟地址？](/OS/Linux内核和用户程序运行在物理地址还是虚拟地址.md)
 
 ### 内存中的存储问题
 
@@ -135,18 +137,21 @@
 1. [OS中信号量, 互斥体, 自旋锁的概念](/OS/OS信号量互斥体自旋锁的概念.md)
 2. [Linux中的RCU(读-复制-更新)的原理？](/OS/Linux中的RCU.md)
 3. [Linux实现原子操作的方法有哪些？](/OS/Linux实现原子操作的方法有哪些.md)
-4. [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
-5. [Online Judge:  实现一个循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
+4. [linux内核中的锁和同步机制？](/OS/linux内核中的锁和同步机制.md)
+5. [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
+6. [Online Judge:  实现一个循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
 
 ## Linux 内核
 
 1. [linux内核裁剪的方式?](/7.30诺瓦科技/linux内核裁剪的方式.md)
 2. [linux**目录结构**，选项是/usr、/tmp、/etc目录的作用?](/8.1Dji大疆/linux目录结构.md)
 3. [Linux虚拟文件系统的关键数据结构有哪些](/OS/Linux虚拟文件系统的关键数据结构有哪些.md)
-4. 未全部完成 --*[Linux内核中常用的两个宏定义?](/8.1Dji大疆/linux内核中常用的两个宏定义.md)
-5. [Linux内核的五个模块描述](/OS/Linux内核的五个模块描述.md)
-6. [Linux的具体的命令, 文件操作的5个命令?]
-7. [Makefile文件的编写?]
+   + 通过什么组件实现多种文件系统互通？
+4. [linux 7种文件类型](/OS/linux7种文件类型.md)
+5. 未全部完成 --*[Linux内核中常用的两个宏定义?](/8.1Dji大疆/linux内核中常用的两个宏定义.md)
+6. [Linux内核的五个模块描述](/OS/Linux内核的五个模块描述.md)
+7. [Linux的具体的命令, 文件操作的5个命令?]
+8. [Makefile文件的编写?]
 
 ### linux 中断
 
@@ -173,7 +178,7 @@
 2. [Linux 系统权限755 777 644 ?](/8.3网易/LInux系统权限.md)
 3. Linux把名称中含有test内容的进程找出来杀死?](/shell/Linux把名称中含有test内容的进程找出来杀死.md)
 4. [Linux读取某个文件的某一行或者某几行, 使用sed](/shell/Linux读取某个文件的某一行或者某几行.md)
-5. [Linux 磁盘整体情况](/shell/磁盘整体情况.md)
+5. [Linux 磁盘整体情况](/shell/Linux磁盘整体情况.md)
 6. [grep邮件地址正则表达式的匹配书写](https://luckywater.top/2019/04/25/Regular-Expression/)
 
 ## 嵌入式和C的基础知识
@@ -200,7 +205,7 @@
 10. [C中全局变量和局部变量可以重名吗?](/8.24HIK/C中全局变量和局部变量可以重名.md)
 11. [C 宏定义的用法](/8.24HIK/C宏使用.md)
 12. [C 不同变量的生命周期?](/C/C变量的生命周期.md)
-13. [C 运算符的优先级](/C/C 运算符的优先级.md)
+13. [C 运算符的优先级](/C/CC运算符的优先级运算符的优先级.md)
 14. [预处理器标识#error的目的是什么](/OS/error的目的是什么.md)
 15. [用变量a给出下面的定义，包含指针？](/C/用变量a给出下面的定义.md)
 16. [Token划分，自加运算符++](/C/Token划分.md)

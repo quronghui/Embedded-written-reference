@@ -14,4 +14,5 @@
 
    + NF_IP_PRE_ROUTING、NF_IP_LOCAL_IN、NF_IP_FORWARD、NF_IP_LOCAL_OUT、NF_IP_POST_ROUTING
 
-   {% asset_img linux_hook.png %}
+   ![linux_hook.png](https://github.com/quronghui/Embedded-written-reference/blob/master/OS/photo/linux_hook.png)
+

@@ -83,7 +83,15 @@ $ ps -o majflt,minflt -C program		//majflt -- major fault 大错误；minflt -- 
 
    ![memory_malloc.png](https://github.com/quronghui/Embedded-written-reference/blob/master/OS/photo/memory_malloc.png)
 
-4. 如何查看堆内内存的碎片情况 ？
+4. malloc()申请的内存空间范围?
+
+   ```
+   0x00000000 -- 0xBFFFFFFF;		//32bit的地址当中
+   ```
+
+   
+
+5. 如何查看堆内内存的碎片情况 ？
 
    ```
    glibc 提供的结构体:
@@ -91,7 +99,7 @@ $ ps -o majflt,minflt -C program		//majflt -- major fault 大错误；minflt -- 
    }
    ```
 
-5. 如果想知道堆内究竟有多少碎片:
+6. 如果想知道堆内究竟有多少碎片:
 
    + 可通过 mallinfo 结构中的 fsmblks 、smblks 、ordblks 值得到，这些值表示不同大小区间的碎片总个数，这些区间分别是 0~80 字节，80~512 字节，512~128k**。
 

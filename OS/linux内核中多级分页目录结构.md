@@ -5,11 +5,11 @@
 | Funcation            | 底层函数                | size     | 作用于DMA | 阻塞申请 | 内存分配位置   |
 | -------------------- | ----------------------- | -------- | --------- | -------- | -------------- |
 | __get_free_page()    | __alloc_pages           | 4M       | 直接      |          |                |
-| kmem_cache_alloc()   | kmem_cache_create/alloc | <128kb   | 直接      |          |                |
+| kmem_cache_alloc()   | kmem_cache_create/alloc | <128kb   | 直接      |          | 基于slab分配   |
 | kmalloc()            | **同上**                | <128kb   | 直接      | 睡眠等待 | 从低端内存分配 |
 | vmalloc()            |                         | <1GB     |           | 非阻塞   | 从高端内存分配 |
-| dma_alloc_coherent() | __alloc_pages           | 4M       |           |          |                |
-| ioremap()            |                         | 已知     |           |          |                |
+| dma_alloc_coherent() | __alloc_pages           | 4M       |           |          | DMA            |
+| ioremap()            |                         | 已知     |           |          | 设备驱动       |
 | **Boot Memory**      | alloc_bootmem()         | mem=size |           |          |                |
 
 ### 内存分配的函数适用情况

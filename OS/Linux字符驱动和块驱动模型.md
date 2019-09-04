@@ -31,4 +31,4 @@
 
 ### 块设备驱动系统架构：
 
-{% asset_img mtd_struct.png %}
+![mtd_struct.png]()

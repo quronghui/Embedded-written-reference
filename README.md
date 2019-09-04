@@ -17,7 +17,7 @@
      * [网络](#网络)
      * [Linux 驱动开发](#linux-驱动开发)
         * [硬件相关知识](#硬件相关知识)
-        * [linux 驱动开发](#linux-驱动开发-1)
+        * [linux 驱动开发](#linux-驱动开发)
         * [Linux 同步](#linux-同步)
      * [Linux 内核](#linux-内核)
         * [linux 中断](#linux-中断)
@@ -114,7 +114,7 @@
 4. [英文翻译: 关于时钟发生器的英文翻译?](/7.30诺瓦科技/关于时钟发生器的英文翻译.md)
 5. [驱动开发参考](https://www.jianshu.com/p/716ed9cdb8f3)
 
-### linux 驱动开发
+### linux 驱动模型
 
 1. [Linux总线驱动模型platform](OS/Linux驱动模型platform.md)
 
@@ -221,119 +221,6 @@
 2. [二叉树8个度为2节点, 5个度为1节点 , 度为0有多少个节点?](/8.3网易/二叉树节点和度.md)
 3. [list -- 为一个链表设置一个head和tail, 链表的操作哪一个和长度相关?](/8.24HIK/list相关操作.md)
    - list -- 哪一种数据结构, 只能顺序访问?
-4. [Tree  -- B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/树的联系与区别.md)
-5. [Graph -- 图的表示和存储](/dataStruct/图的表示和存储.md)
-6. [数据结构中堆、栈和队列的理区别?](/dataStruct/数据结构中堆、栈和队列的理区别.md)
-
-
-
-### linux 驱动开发
-
-1. [Linux总线驱动模型platform](OS/Linux驱动模型platform.md)
-
-2. [Linux字符驱动和块驱动模型](/OS/Linux字符驱动和块驱动模型.md)
-
-3. [linux系统打开设备文件，进程可能处于三种基本状态?如果多次打开设备文件，驱动程序应该实现什么?](/8.1Dji大疆/linux系统打开设备文件处于的状态.md)
-
-4. [驱动中的一些查看命令? insomd和rmmod注意情况](/OS/驱动中的一些查看命令.md)
-
-5. [主设备号和次设备号的用途？字符设备的注册方法？](/OS/主设备号和次设备号的用途.md)
-
-6. [ IIC原理，总线框架，设备编写方法，i2c_msg]
-
-   - ​     https://www.cnblogs.com/hongzhunzhun/p/4533960.html
-
-     ​     https://www.cnblogs.com/wuchanming/p/4465155.html
-
-7. [文件操作中控制函数：ioctl和unlock_ioctl的区别](/OS/ioctl和unlock_ioctl的区别.md)
-
-###  Linux 同步
-
-1. [OS中信号量, 互斥体, 自旋锁的概念](/OS/OS信号量互斥体自旋锁的概念.md)
-2. [Linux中的RCU(读-复制-更新)的原理？](/OS/Linux中的RCU.md)
-3. [Linux实现原子操作的方法有哪些？](/OS/Linux实现原子操作的方法有哪些.md)
-4. [linux内核中的锁和同步机制？](/OS/linux内核中的锁和同步机制.md)
-5. [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
-6. [Online Judge:  实现一个循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
-
-## Linux 内核
-
-1. [linux内核裁剪的方式?](/7.30诺瓦科技/linux内核裁剪的方式.md)
-2. [linux**目录结构**，选项是/usr、/tmp、/etc目录的作用?](/8.1Dji大疆/linux目录结构.md)
-3. [Linux虚拟文件系统的关键数据结构有哪些](/OS/Linux虚拟文件系统的关键数据结构有哪些.md)
-   + 通过什么组件实现多种文件系统互通？
-4. [linux 7种文件类型](/OS/linux7种文件类型.md)
-5. 未全部完成 --*[Linux内核中常用的两个宏定义?](/8.1Dji大疆/linux内核中常用的两个宏定义.md)
-6. [Linux内核的五个模块描述](/OS/Linux内核的五个模块描述.md)
-7. [Linux的具体的命令, 文件操作的5个命令?]
-8. [Makefile文件的编写?]
-
-### linux 中断
-
-1. [中断的定义 和 中断处理过程的描述?](/8.1Dji大疆/OS中断处理过程的描述.md)
-2. [Linux软中断, 软件中断 和硬件中断的区别](/OS/Linux中断之间区别.md)
-3. [Linux中断分层和中断嵌套的概念](/OS/Linux中断分层的概念.md)
-4. [linux系统调用的过程？]
-5. [进程上下文切换 VS 中断上下文切换](/OS/Linux进程上下文切换和中断上下文切换.md)
-6. [Linux 中断ISR函数的特点](/8.1Dji大疆/OS中断处理过程的描述.md)
-7. [linux中系统调用过程？简述read()的系统调用过程？](/OS/linux中系统调用过程.md)
-
-###  linux kernel启动
-
-1. [Uboot如何给kernel传参数？(ARM结构下)](/OS/Uboot如何给kernel传参数.md)
-2. [Linux内核启动流程?](/OS/Linux内核启动流程.md)
-3. [Bootloader和BIOS、uboot和grub和bootmgr的区别](/OS/Bootloader.md)
-4. [linux中netfilter的实现机制？是如何实现对特定数据包进行处理(如过滤，NAT之类的)及HOOK点的注册？](/OS/linux中netfilter的实现机制.md)
-5. [linux驱动中操作物理绝对地址为什么要先ioremap?](/OS/linux的ioremap.md)
-6. [ Linux抽象出framebuffer这个设备的作用？](/OS/Linux抽象出framebuffer这个设备的作用.md)
-7. [linux两种错误：kernel panic 和 Oops段错误信息?](/OS/Oops.md)
-
-### shell
-
-1. [echo 重定义 和 grep 正则表达式匹配](/8.3网易/echo重定义和grep正则表达式匹配.md)
-2. [Linux 系统权限755 777 644 ?](/8.3网易/LInux系统权限.md)
-3. Linux把名称中含有test内容的进程找出来杀死?](/shell/Linux把名称中含有test内容的进程找出来杀死.md)
-4. [Linux读取某个文件的某一行或者某几行, 使用sed](/shell/Linux读取某个文件的某一行或者某几行.md)
-5. [Linux 磁盘整体情况](/shell/Linux磁盘整体情况.md)
-6. [grep邮件地址正则表达式的匹配书写](https://luckywater.top/2019/04/25/Regular-Expression/)
-
-## 嵌入式和C的基础知识
-
-### RTOS
-
-1. [实时操作系统和非实时操作系统特点和区别?](/8.1Dji大疆/OS实时和非实时性.md)
-2. [嵌入式实时操作系统描述?](/8.1Dji大疆/OS嵌入式实时操作系统描述.md)
-3. [OS多任务嵌入式系统中，将寄存器REGn的指定位反转](/8.1Dji大疆/OS嵌入式系统指定位反转.md)
-4. [嵌入式系统中，要求程序员去访问某特定的内存位置的特点](/OS/访问固定的内存位置.md)
-5. [如何写C嵌入式的死循环](/OS/如何写C嵌入式的死循环/md)
-
-### 基础知识
-
-4. [C语言**编译执行**的四个阶段?](/8.1Dji大疆/C语言编译执行的四个阶段.md)
-5. [简述**C函数中参数**传递问题](/8.1Dji大疆/简述C函数中参数传递问题.md)
-6. [C函数参数传递的三种方式, 传值, 指针, 引用?](/C/指针和引用的区别.md)
-4. [pointer -- 指向指针的指针，函数指针]
-5. [C : 当char类型变量进行赋值时, 超过其范围时怎么处理?](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/charConvertint.c)
-6. [C: 有符号的变量(负数)和无符号的变量(正数)相加](/8.1Dji大疆/C有符号的变量和无符号的变量相加.md)
-7. [C: 关键字用途的描述](/8.1Dji大疆/C关键词的描述.md)
-8. [C简述static关键字对于工程模块化的作用?](/C/C简述static关键字对于工程模块化的作用.md)
-9. [如何理解嵌入式的volatile变量？](/OS/嵌入式的volatile变量.md)
-10. [C中全局变量和局部变量可以重名吗?](/8.24HIK/C中全局变量和局部变量可以重名.md)
-11. [C 宏定义的用法](/8.24HIK/C宏使用.md)
-12. [C 不同变量的生命周期?](/C/C变量的生命周期.md)
-13. [C 运算符的优先级](/C/CC运算符的优先级运算符的优先级.md)
-14. [预处理器标识#error的目的是什么](/OS/error的目的是什么.md)
-15. [用变量a给出下面的定义，包含指针？](/C/用变量a给出下面的定义.md)
-16. [Token划分，自加运算符++](/C/Token划分.md)
-17. [C什么是左值，什么是右值]
-18. [C: 如何实现一个数的四舍五入?]
-
-## 数据结构
-
-1.  [Dijkstra最短路径算法的描述正确的是?](/8.3网易/Dijkstra最短路径算法的描述.md)
-2. [二叉树8个度为2节点, 5个度为1节点 , 度为0有多少个节点?](/8.3网易/二叉树节点和度.md)
-3. [list -- 为一个链表设置一个head和tail, 链表的操作哪一个和长度相关?](/8.24HIK/list相关操作.md)
-   + list -- 哪一种数据结构, 只能顺序访问?
 4. [Tree  -- B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/树的联系与区别.md)
 5. [Graph -- 图的表示和存储](/dataStruct/图的表示和存储.md)
 6. [数据结构中堆、栈和队列的理区别?](/dataStruct/数据结构中堆、栈和队列的理区别.md)

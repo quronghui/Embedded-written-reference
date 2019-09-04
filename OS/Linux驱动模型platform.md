@@ -28,3 +28,11 @@
      + 将设备注册到总线，并将其放入所属总线的dev链表中
      + 调用所属总线的**match函数**: 寻找该总线上与之匹配的每一个驱动程序，
      + **probe函数**: 将相应的设备和驱动进行绑定
+
+### match()是如何进行匹配的
+
+1. platform_device 和 platform_driver匹配的四种可能性？
+   + 基于设备树风格匹配
+   + 基于ACPI风格匹配
+   + 匹配ID表（platform_device设备名是否出现在platform_driver的ID表内）
+   + 匹配 platform_device设备名和驱动名字

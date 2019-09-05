@@ -29,3 +29,14 @@
 ### **互补型的实时性(Real Time)较好的DSP架构**
 
 1. DSP是微处理器的一种,这种微处理器具有极高的处理速度.因为应用这类处理器的场合要求具有很高的实时性(Real Time)。
+
+## MIPS cpu地址空间划分
+
+1. 2G的用户空间，2G内核空间
+
+   ![mips_cpu.png](https://github.com/quronghui/Embedded-written-reference/blob/master/OS/photo/mips_cpu.png)
+
+2. 具体地址空间内容
+
+   ![mips_kseg.png](https://github.com/quronghui/Embedded-written-reference/blob/master/OS/photo/mips_kseg.png)
+

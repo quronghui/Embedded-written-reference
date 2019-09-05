@@ -31,4 +31,5 @@
 
 ### 块设备驱动系统架构：
 
-![mtd_struct.png]()
+![mtd_struct.png](https://github.com/quronghui/Embedded-written-reference/blob/master/OS/photo/mtd_struct.png)
+

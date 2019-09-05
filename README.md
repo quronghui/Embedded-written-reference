@@ -134,6 +134,12 @@
 
 7. [文件操作中控制函数：ioctl和unlock_ioctl的区别](/OS/ioctl和unlock_ioctl的区别.md)
 
+8. [linux 下的声卡驱动alsa框架](https://luckywater.top/2019/09/04/LinuxALSA/)
+
+9. [linux 下的camera驱动V4L2框架](https://luckywater.top/2019/09/04/linux-camera-driver/)
+
+10. [蓝牙的协议GATT](https://luckywater.top/2019/09/05/BLE/#more)
+
 ### Linux 同步
 
 1. [OS中信号量, 互斥体, 自旋锁的概念](/OS/OS信号量互斥体自旋锁的概念.md)

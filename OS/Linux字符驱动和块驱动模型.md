@@ -12,10 +12,12 @@
 | 函数     | open,close,read和write | 无读写的操作函数                   |
 |          |                        | bio, request, request_queue 结构体 |
 
-+ 符设备和块设备的区别：仅仅在于内核内部管理数据的方式，也就是内核及驱动程序之间的软件接口，而这些不同对用户来讲是透明的。
++ 符设备和块设备的区别：仅仅在于内核内部管理数据的方式，也就是内核及驱动程序之间的软件接口，而这些不同对用户来讲是**透明**的。
 + 在内核中，和字符驱动程序相比，块驱动程序具有完全不同的接口。
 
 ### 字符设备驱动程序框架
+
+![driver_enter.png](https://github.com/quronghui/Embedded-written-reference/blob/master/OS/photo/driver_enter.png)
 
 1. 字符设备的注册
    + init函数注册设备，建立设备节点

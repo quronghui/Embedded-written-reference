@@ -18,7 +18,7 @@
      * [Linux 驱动开发](#linux-驱动开发)
         * [硬件相关知识](#硬件相关知识)
         * [linux 驱动开发](#linux-驱动开发)
-        * [Linux 同步](#linux-同步)
+        * [Linux 同步和异步](#linux-同步和异步)
      * [Linux 内核](#linux-内核)
         * [linux 中断](#linux-中断)
         * [linux kernel启动](#linux-kernel启动)
@@ -67,23 +67,20 @@
 
 ## 进程和线程
 
-1. [linux下**进程间通信**有哪几种方式？进程间通信为何需要内核？](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
+1. [linux下**进程间通信**的方式？进程间通信为何需要内核？](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
 2. [OS 如何实现进程间上下文的切换?](/8.1Dji大疆/OS如何实现进程间的切换.md)
-3. [Linux 多任务, 进程, 线程，协成之间的关系?](/8.1Dji大疆/Linux多任务进程线程之间的关系.md)
+3. [Linux 多任务, 进程, 线程，协程之间的关系?](/8.1Dji大疆/Linux多任务进程线程之间的关系.md)
 4. [Linux查询进程和线程数量?](/8.1Dji大疆/Linux查询进程和线程数量.md)
 5. [Linux产生僵尸进程的原因？](https://luckywater.top/2019/04/22/system-process/)
 
 ## 网络
 
-1. [TCP与UDP的区别?](https://luckywater.top/2019/05/06/TcpIp/)
-2. [TCP/IP物理层的具体内容是啥?](7.30诺瓦科技/tcp物理层的具体内容.md)
-3. [TCP IP 数据传输中, 数据如何进行分包?](/8.3网易/TCPIP数据分包.md)
+1. [OSI七层模型的协议？TCP/IP五层模型的硬件设备？路由协议？](/TCP/OSI七层中的硬件设备.md)
+2. [TCP与UDP的区别？TCP三次握手和四次挥手？TCP数据分包？](/TCP/tcp和udp的区别.md)
+3. [TCP/IP物理层的具体内容是啥?](7.30诺瓦科技/tcp物理层的具体内容.md)
 5. [DNS服务器是如何工作的?](/TCP/DNS服务器是如何工作的.md)
-6. [OSI七层中的硬件设备](/TCP/OSI七层中的硬件设备.md)
-7. [TCP三次握手和四次挥手](/TCP/TCP三次握手和四次挥手.md)
-8. [Socket建立连接过程](/TCP/Socket建立连接过程.md)
-9. [TCP，HTTP，HTTPS之间的区别和联系?](/TCP/http和TCP之间的关联.md)
-10. [https怎么保证安全的？讲讲数字签名的过程]
+9. [TCP，HTTP，HTTPS之间的区别和联系？https怎么保证安全的？讲讲数字签名的过程？](/TCP/http和TCP之间的关联.md)
+7. [建立Socket连接过程？--基于TCP/UDP](/TCP/Socket建立连接过程.md)
 
 ## Linux 驱动开发
 
@@ -97,21 +94,13 @@
 
 ### linux 驱动模型
 
-1. [Linux总线驱动模型platform](OS/Linux驱动模型platform.md)
+1. [Linux总线驱动模型platform？](OS/Linux驱动模型platform.md)
 
-2. [Linux字符驱动和块驱动模型](/OS/Linux字符驱动和块驱动模型.md)
+2. [Linux字符驱动和块驱动模型？注册设备的入口函数？](/OS/Linux字符驱动和块驱动模型.md)
 
-3. [linux系统打开设备文件，进程可能处于三种基本状态?如果多次打开设备文件，驱动程序应该实现什么?](/8.1Dji大疆/linux系统打开设备文件处于的状态.md)
-
-4. [驱动中的一些查看命令? insomd和rmmod注意情况](/OS/驱动中的一些查看命令.md)
+4. [驱动中的一些命令? insomd和rmmod注意情况](/OS/驱动中的一些查看命令.md)
 
 5. [主设备号和次设备号的用途？字符设备的注册方法？](/OS/主设备号和次设备号的用途.md)
-
-6. [ IIC原理，总线框架，设备编写方法，i2c_msg]
-
-   - ​     https://www.cnblogs.com/hongzhunzhun/p/4533960.html
-
-     ​     https://www.cnblogs.com/wuchanming/p/4465155.html
 
 7. [文件操作中控制函数：ioctl和unlock_ioctl的区别](/OS/ioctl和unlock_ioctl的区别.md)
 
@@ -121,14 +110,15 @@
 
 10. [蓝牙的协议GATT](https://luckywater.top/2019/09/05/BLE/#more)
 
-### Linux 同步
+### Linux 同步和异步
 
-1. [OS中信号量, 互斥体, 自旋锁的概念](/OS/OS信号量互斥体自旋锁的概念.md)
-2. [Linux中的RCU(读-复制-更新)的原理？](/OS/Linux中的RCU.md)
-3. [Linux实现原子操作的方法有哪些？](/OS/Linux实现原子操作的方法有哪些.md)
-4. [linux内核中的锁和同步机制？](/OS/linux内核中的锁和同步机制.md)
-5. [OS并发: 可以通过哪些方法进行同步?](/8.1Dji大疆/OS并发的同步机制.md)
-6. [Online Judge:  实现一个循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
+1. [概念 -- 并发和竞态？阻塞和非阻塞I/O？同步和异步I/O？](/OS/几组概念.md)
+   + I/O的五中模型？AIO的实现机制？
+2. [OS中实现原子的操作？多种锁的区别？自旋锁和互斥锁？](/OS/OS信号量互斥体自旋锁的概念.md)
+3. [RCU(读-复制-更新)的原理？](/OS/Linux中的RCU.md)
+5. [linux**内核**中的 自旋锁 和 内核信号量？内核信号量和用户空间信号量？](/OS/linux内核中的锁和同步机制.md)
+6. [OS 同步机制的实现？信号量，互斥体，管程](/8.1Dji大疆/OS 同步机制的实现.md)
+7. [Online Judge:  实现一个循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
 
 ## Linux 内核
 
@@ -212,49 +202,3 @@
 5. [Tree  -- B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/树的联系与区别.md)
 6. [Graph -- 图的表示和存储](/dataStruct/图的表示和存储.md)
 7. [数据结构中堆、栈和队列的理区别?](/dataStruct/数据结构中堆、栈和队列的理区别.md)
-
-
-
-## 小米嵌入式软件一面
-
-### 一面
-
-+ 侧重于Linux kernel  和 Linux driver
-
-1. camera 参数是否了解？
-2. Linux内存空间分配，分用户空间和内存空间？
-3. Linux进程和线程的区别，CPU调度的最小单位？
-4. Linux内核中进程调度的方式？
-5. OS 造成缓存一致性的原因？如何解决？
-6. Linux 同步和异步的概念？
-7. Linux 内核中实现同步的机制？
-8. Linux驱动模型platform的介绍？
-9. Linux驱动模块的编译和加载方式？设备号的分配？
-10. 问一问什么时候毕业？
-
-### 二面准备
-
-+ 小米嵌入式主要面向手机驱动开发，北京负责小米系列，深圳是红米系列，大概面向安卓的library 和Linux kernel 层；
-
-1. 什么Linux里的中断、进程通信等等。
-
-2. 还有Kernel的一些问题。
-
-3. 其他就是C/C++的一些问题？
-
-4. 手撕代码，一些排序啊什么的。其他就是项目相关的了。
-
-5. 模电中的场管和运放；
-
-
-## 联发科技面试准备
-
-1. 联发科的笔试基本上都是C语言基础和linux，面试总共有两轮。
-   + 主要针对项目的理解和深入；
-   + 成绩不好的原因；
-2. Linux操作系统的内容？
-3. 提了个多线程问题
-6. C语言中如何实现C++的成员函数？
-7. 几种C语言指针类型？
-8. C语言的几个关键字的作用，作用域知识。 
-11. 

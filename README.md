@@ -117,24 +117,22 @@
 2. [OS中实现原子的操作？多种锁的区别？自旋锁和互斥锁？](/OS/OS信号量互斥体自旋锁的概念.md)
 3. [RCU(读-复制-更新)的原理？](/OS/Linux中的RCU.md)
 5. [linux**内核**中的 自旋锁 和 内核信号量？内核信号量和用户空间信号量？](/OS/linux内核中的锁和同步机制.md)
-6. [OS 同步机制的实现？信号量，互斥体，管程](/8.1Dji大疆/OS 同步机制的实现.md)
-7. [Online Judge:  实现一个循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
+6. [OS 同步机制的实现？信号量，互斥体，管程？](/8.1Dji大疆/OS同步机制的实现.md)
+7. [Online Judge:  实现通过循环队列实现循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
 
 ## Linux 内核
 
 1. [linux内核裁剪的方式?](/7.30诺瓦科技/linux内核裁剪的方式.md)
-2. [linux**目录结构**，选项是/usr、/tmp、/etc目录的作用?](/8.1Dji大疆/linux目录结构.md)
-3. [Linux虚拟文件系统的关键数据结构有哪些](/OS/Linux虚拟文件系统的关键数据结构有哪些.md)
-   - 通过什么组件实现多种文件系统互通？
-4. [linux 7种文件类型](/OS/linux7种文件类型.md)
-5. 未全部完成 --*[Linux内核中常用的两个宏定义?](/8.1Dji大疆/linux内核中常用的两个宏定义.md)
+2. [linux 7种文件类型](/OS/linux7种文件类型.md) 
+3. [linux**文件系统的目录结构**，选项是/usr、/tmp、/etc目录的作用?](/8.1Dji大疆/linux目录结构.md)
+4. [Linux虚拟文件系统VFS的关键数据结构有哪些？VFS支持多文件系统互通？](/OS/Linux虚拟文件系统的关键数据结构有哪些.md)
+5. [Linux 内核中常用的两个宏定义？offset 和 typeof？](/8.1Dji大疆/linux内核中常用的两个宏定义.md)
 6. [Linux内核的五个模块描述](/OS/Linux内核的五个模块描述.md)
-7. [Linux的具体的命令, 文件操作的5个命令?]
-8. [Makefile文件的编写?]
+7. [Linux的具体的命令, 文件和目录的5个操作命令?](/OS/linux文件操作的五个命令.md)
 
 ### linux 中断
 
-1. [中断的定义 和 中断处理过程的描述?](/8.1Dji大疆/OS中断处理过程的描述.md)
+1. [中断ISR的定义 和 中断ISR处理过程的描述?](/8.1Dji大疆/OS中断处理过程的描述.md)
 2. [Linux软中断, 软件中断 和硬件中断的区别](/OS/Linux中断之间区别.md)
 3. [Linux中断分层和中断嵌套的概念](/OS/Linux中断分层的概念.md)
 4. [linux系统调用的过程？]
@@ -160,6 +158,7 @@
 4. [Linux读取某个文件的某一行或者某几行, 使用sed](/shell/Linux读取某个文件的某一行或者某几行.md)
 5. [Linux 磁盘整体情况](/shell/Linux磁盘整体情况.md)
 6. [grep邮件地址正则表达式的匹配书写](https://luckywater.top/2019/04/25/Regular-Expression/)
+7. [Makefile文件的编写?](/shell/Makefile.md)
 
 ## 嵌入式和C的基础知识
 

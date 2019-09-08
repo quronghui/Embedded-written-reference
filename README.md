@@ -36,6 +36,14 @@
    + MIPS 体系结构cpu地址空间划分
 7. [OS无锁可以提高整个程序的性能，但是CPU需要对此提供支持，请以x86/ARM为例简述](/8.1Dji大疆/cpu对锁的支持.md)
 
+## 进程和线程
+
+1. [linux下**进程间通信**的方式？进程间通信为何需要内核？](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
+2. [OS 如何实现进程间上下文的切换?](/8.1Dji大疆/OS如何实现进程间的切换.md)
+3. [Linux 多任务, 进程, 线程，协程之间的关系?](/8.1Dji大疆/Linux多任务进程线程之间的关系.md)
+4. [Linux查询进程和线程数量?](/8.1Dji大疆/Linux查询进程和线程数量.md)
+5. [Linux产生僵尸进程的原因？](https://luckywater.top/2019/04/22/system-process/)
+
 ## 内存管理
 
 ### 内存分配
@@ -44,7 +52,6 @@
 3. [C函数strcpy，memcpy，sprintf, memset区别和具体实现](/8.1Dji大疆/C函数使用注意.md)
 4. [C 结构体和联合体的**内存字节**对齐计算?](https://luckywater.top/2019/08/02/PragmaPack/)
 5. [linux **用户空间**中堆内存的分配malloc? 底层mmap内存分配原理? ](/OS/linux内存管理.md)
-6. [linux 用户空间中malloc分配的内存空间大小]
 7. [linux**内核空间**中内存分配kmalloc, vmalloc原理？linux 多级分页目录结构？](/OS/linux内核中多级分页目录结构.md)
    + DMA的原理
 8. [在支持并使能MMU的系统中，Linux内核和用户程序运行在物理地址还是虚拟地址？](/OS/Linux内核和用户程序运行在物理地址还是虚拟地址.md)
@@ -58,29 +65,13 @@
 4. [OS 嵌入式系统中共享资源的访问限制？]( /8.1Dji大疆/OS简述线程之间的同步互斥时占用空间的大小.md)
 6. [Linux下**用户模式与内核模式 **的定义，切换，通信?](https://luckywater.top/2019/08/02/linux用户和内核/)
    + 内核空间的划分？高端内存定义？
+6. [linux系统调用的过程？read系统调用的过程？](/OS/linux中系统调用过程.md)
 
 ### 内存管理
 
 1. [OS cache缓存一致性描述?](/8.1Dji大疆/OScache缓存一致性描述.md)
 2. [OS cache(页面)多任务调度描述?](/8.1Dji大疆/OScache多任务调度描述.md)
 3. [OS内存泄漏的理解](/OS/内存泄漏的理解.md)
-
-## 进程和线程
-
-1. [linux下**进程间通信**的方式？进程间通信为何需要内核？](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
-2. [OS 如何实现进程间上下文的切换?](/8.1Dji大疆/OS如何实现进程间的切换.md)
-3. [Linux 多任务, 进程, 线程，协程之间的关系?](/8.1Dji大疆/Linux多任务进程线程之间的关系.md)
-4. [Linux查询进程和线程数量?](/8.1Dji大疆/Linux查询进程和线程数量.md)
-5. [Linux产生僵尸进程的原因？](https://luckywater.top/2019/04/22/system-process/)
-
-## 网络
-
-1. [OSI七层模型的协议？TCP/IP五层模型的硬件设备？路由协议？](/TCP/OSI七层中的硬件设备.md)
-2. [TCP与UDP的区别？TCP三次握手和四次挥手？TCP数据分包？](/TCP/tcp和udp的区别.md)
-3. [TCP/IP物理层的具体内容是啥?](7.30诺瓦科技/tcp物理层的具体内容.md)
-5. [DNS服务器是如何工作的?](/TCP/DNS服务器是如何工作的.md)
-9. [TCP，HTTP，HTTPS之间的区别和联系？https怎么保证安全的？讲讲数字签名的过程？](/TCP/http和TCP之间的关联.md)
-7. [建立Socket连接过程？--基于TCP/UDP](/TCP/Socket建立连接过程.md)
 
 ## Linux 驱动开发
 
@@ -135,18 +126,14 @@
 1. [中断ISR的定义 和 中断ISR处理过程的描述?](/8.1Dji大疆/OS中断处理过程的描述.md)
 2. [Linux软中断, 软件中断 和硬件中断的区别](/OS/Linux中断之间区别.md)
 3. [Linux中断分层和中断嵌套的概念](/OS/Linux中断分层的概念.md)
-4. [linux系统调用的过程？]
 5. [进程上下文切换 VS 中断上下文切换](/OS/Linux进程上下文切换和中断上下文切换.md)
-6. [Linux 中断ISR函数的特点](/8.1Dji大疆/OS中断处理过程的描述.md)
-7. [linux中系统调用过程？简述read()的系统调用过程？](/OS/linux中系统调用过程.md)
 
 ### linux kernel启动
 
 1. [U-boot 和 Bootloader引导内核的启动](/OS/Bootloader.md) 
-2. [Uboot如何给kernel传参数？(ARM结构下)](/OS/Uboot如何给kernel传参数.md)
+2. [ARM结构下，Uboot如何给kernel传参数](/OS/Uboot如何给kernel传参数.md)
 3. [Linux内核启动流程?](/OS/Linux内核启动流程.md)
 4. [linux中netfilter的实现机制？是如何实现对特定数据包进行处理(如过滤，NAT之类的)及HOOK点的注册？](/OS/linux中netfilter的实现机制.md)
-5. [linux驱动中操作物理绝对地址为什么要先ioremap?](/OS/linux的ioremap.md)
 6. [ Linux抽象出framebuffer这个设备的作用？](/OS/Linux抽象出framebuffer这个设备的作用.md)
 7. [linux两种错误：kernel panic 和 Oops段错误信息?](/OS/Oops.md)
 
@@ -169,6 +156,10 @@
 3. [OS多任务嵌入式系统中，将寄存器REGn的指定位反转](/8.1Dji大疆/OS嵌入式系统指定位反转.md)
 4. [嵌入式系统中，要求程序员去访问某特定的内存位置的特点](/OS/访问固定的内存位置.md)
 5. [如何写C嵌入式的死循环](/OS/如何写C嵌入式的死循环/md)
+6. [单片机应用程序存放的位置？单片机应用程序的三种架构？](/C/单片机应用程序架构.md)
+7. [IGBT是什么控制性原件？](/C/IGBT是什么控制性原件.md)
+8. [看门狗程序是为了溢出而设置的复位点，放在哪个位置？](/C/看门狗程序放置的位置.md
+9. [单片机中程序计数器PC是16bit，其寻址范围是多少？]
 
 ### 基础知识
 
@@ -190,6 +181,16 @@
 19. [Token划分，自加运算符++](/C/Token划分.md)
 20. [C什么是左值，什么是右值]
 21. [C: 如何实现一个数的四舍五入?]
+22. [C中常量的表示？常量和变量的作用？](/C/C中常量的表示.md)
+
+## 网络
+
+1. [OSI七层模型的协议？TCP/IP五层模型的硬件设备？路由协议？](/TCP/OSI七层中的硬件设备.md)
+2. [TCP与UDP的区别？TCP三次握手和四次挥手？TCP数据分包？](/TCP/tcp和udp的区别.md)
+3. [TCP/IP物理层的具体内容是啥?](7.30诺瓦科技/tcp物理层的具体内容.md)
+4. [DNS服务器是如何工作的?](/TCP/DNS服务器是如何工作的.md)
+5. [TCP，HTTP，HTTPS之间的区别和联系？https怎么保证安全的？讲讲数字签名的过程？](/TCP/http和TCP之间的关联.md)
+6. [建立Socket连接过程？--基于TCP/UDP](/TCP/Socket建立连接过程.md)
 
 ## 数据结构
 
@@ -201,3 +202,7 @@
 5. [Tree  -- B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/树的联系与区别.md)
 6. [Graph -- 图的表示和存储](/dataStruct/图的表示和存储.md)
 7. [数据结构中堆、栈和队列的理区别?](/dataStruct/数据结构中堆、栈和队列的理区别.md)
+
+## 机器学习
+
+1. [神经网络中引入非线性能力的是？](/neuralNet/神经网络中引入非线性能力的是.md)

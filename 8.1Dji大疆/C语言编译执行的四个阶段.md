@@ -1,6 +1,6 @@
 ### C函数使用注意
 
-1. C语言**编译执行**的四个阶段？
+1. C语言**编译链接**的四个阶段？
 
    ![Cobject_link.png](/8.1Dji大疆/photo/Cobject_link.png)
 
@@ -15,5 +15,15 @@
    4. 链接: 
       - 将目标文件所需的**库, 文件**进行链接
 
-2. volatile应该是在**编译阶段**，extern在**链接阶段**。
+2. [程序编译成可执行文件的代码](https://luckywater.top/2019/03/18/ComplationAndC/)
+
+   + ```
+     $ gcc -S main.c -o main.s	//生成汇编代码
+     $ gcc -c main.s -o main.o	//生成目标文件 
+     $ gcc main.o -o main		//生成可执行文件
+     ```
+
+3. volatile应该是在**编译阶段**，extern在**链接阶段**。
+
+   + volatile：告诉编译器，修饰的变量不能优化，每次读取需要从内存中读取；
 

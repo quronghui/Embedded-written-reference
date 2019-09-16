@@ -49,7 +49,7 @@
 
 ### 内存分配
 
-2. [C 简述一个程序在编译运行时的内存布局?]( /8.1Dji大疆/OS简述一个执行程序在运行时的内存布局.md)
+2. [C 简述一个程序在运行时占有的内存布局？各段的空间大小？]( /8.1Dji大疆/OS简述一个执行程序在运行时的内存布局.md)
 
 3. [C函数strcpy，memcpy，sprintf, memset区别和具体实现](/8.1Dji大疆/C函数使用注意.md)
 
@@ -119,8 +119,8 @@
 2. [OS中实现原子的操作？多种锁的区别？自旋锁和互斥锁？](/OS/OS信号量互斥体自旋锁的概念.md)
 3. [RCU(读-复制-更新)的原理？](/OS/Linux中的RCU.md)
 5. [linux**内核**中的 自旋锁 和 内核信号量？内核信号量和用户空间信号量？](/OS/linux内核中的锁和同步机制.md)
-6. [OS 同步机制的实现？信号量，互斥体，管程？](/8.1Dji大疆/OS同步机制的实现.md)
-7. [Online Judge:  实现通过循环队列实现循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
+5. [OS 同步和互斥四种方法？临界区/互斥量/信号量/事 件？管程()？](/OS/OS同步机制的实现.md)
+6. [Online Judge:  实现通过循环队列实现循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
 
 ## Linux 内核
 
@@ -176,7 +176,7 @@
 ### 基础知识
 
 1. [预处理器标识#error的目的是什么](/C/error的目的是什么.md)
-2. [C 程序**编译链接**的四个阶段?](/8.1Dji大疆/C语言编译执行的四个阶段.md)
+2. [C 程序**编译链接**的四个阶段？静态库和动态库的编译链接？](/8.1Dji大疆/C语言编译执行的四个阶段.md)
 3. [C函数中参数传递，参数返回的过程？](/8.1Dji大疆/简述C函数中参数传递问题.md)
 4. [C函数参数传递的三种方式：传值, 指针, 引用？为什么要使用指针？](/C/指针和引用的区别.md)
 5. [C : 当char类型变量进行赋值时, 超过其范围时怎么处理?](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/charConvertint.c)
@@ -197,6 +197,7 @@
 16. [C: 如何实现一个数的四舍五入?](/C/C实现一个数的四舍五入.md)
 17. [对于一个频繁使用的短小函数，c/c++用的什么？内联函数？](/C/C对于一个频繁使用的短小函数.md)
 18. [行优先存储和列优先存储？]
+19. []
 
 ## C++
 
@@ -216,15 +217,16 @@
 4. [DNS服务器是如何工作的?](/TCP/DNS服务器是如何工作的.md)
 5. [TCP，HTTP，HTTPS之间的区别和联系？https怎么保证安全的？讲讲数字签名的过程？](/TCP/http和TCP之间的关联.md)
 6. [建立Socket连接过程？--基于TCP/UDP](/TCP/Socket建立连接过程.md)
+7. [IGMP ：组播中的MAC地址？](/TCP/IGMP组播中的MAC地址.md)
 
 ## 数据结构
 
 1. [sort -- 排序算法的介绍和时间复杂度](https://luckywater.top/2019/05/22/Sort-ways/)
 2. [Dijkstra最短路径算法的描述正确的是?](/8.3网易/Dijkstra最短路径算法的描述.md)
-3. [二叉树8个度为2节点, 5个度为1节点 , 度为0有多少个节点?](/8.3网易/二叉树节点和度.md)
-4. [list -- 为一个链表设置一个head和tail, 链表的操作哪一个和长度相关?](/8.24HIK/list相关操作.md)
+3. [tree -- 树和二叉树的相关考题？二叉树的度？二叉树描述？](/8.3网易/二叉树节点和度.md)
+4. [tree  -- B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/树的联系与区别.md)
+5. [list -- 为一个链表设置一个head和tail, 链表的操作哪一个和长度相关?](/8.24HIK/list相关操作.md)
    - list -- 哪一种数据结构, 只能顺序访问?
-5. [Tree  -- B, B-, B+树的定义，特性，联系与区别（红黑树）](/dataStruct/树的联系与区别.md)
 6. [Graph -- 图的表示和存储](/dataStruct/图的表示和存储.md)
 7. [数据结构中堆、栈和队列的理区别?](/dataStruct/数据结构中堆、栈和队列的理区别.md)
 

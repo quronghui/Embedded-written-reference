@@ -1,26 +1,93 @@
+# 指针？数组？函数？指针数组，数组指针？指针函数，函数指针？
+
+## 数组和指针的几组概念
+
+| 区别   | 数组                                                         | 指针                                               |
+| ------ | ------------------------------------------------------------ | -------------------------------------------------- |
+| 本质   | 储存多个**相同类型**数据的集合                               | 相当于一个变量，存放的是其它变量在内存中的**地址** |
+| 赋值   | 一个一个元素的赋值或拷贝                                     | 同类型指针可以直接赋值                             |
+| 存储   | 连续存放；多维数组按照一维存储；<br />静态区或者栈区存储；   | 不连续的内存空间；                                 |
+| sizeof | sizeof(数组名)/sizeof(type)；                                | 32bit - 4bytes；64bit - 8bytes；                   |
+|        | 计算占的空间大小，包含'\0'                                   |                                                    |
+| 数组名 | 数组名作为形参时，退化为指针<br />数组名：数组的首地址, 不是首元素的首地址 |                                                    |
+
 ##　用变量a给出下面的定义
 
-## 题目
-
-+ a) 一个整型数（An integer） 
-+ b) 一个指向整型数的指针（A pointer to an integer）
-+ c) 一个指向指针的的指针，它指向的指针是指向一个整型数（A pointer to a pointer to an integer） 
-+ d) 一个有10个整型数的数组（An array of 10 integers）
-+ e) 一个有10个指针的数组，该指针是指向一个整型数的（An array of 10 pointers to integers） 
-+ f) 一个指向有10个整型数数组的指针（A pointer to an array of 10 integers
-+ g) 一个指向函数的指针，该函数有一个整型参数并返回一个整型数（A pointer to a function that takes an integer as an argument and returns an integer） 
-+ h) 一个有10个指针的数组，该指针指向一个函数，该函数有一个整型参数并返回一个整型数（ An array of ten pointers to functions that take an integer argument and return an integer ）
-
-## 代码
++ 数组：（后缀运算符[] > *指针运算符）
+  + 判断a 首先是指针，还是数组名；
+  + 数组中的元素：是int型的整形数，还是指针元素
++ 函数：才会存在返回值一说；
 
 ```
-a) 	int 	a;
-b)	int		*a;
-c)	int		**a;
-d)	int		a[10];
-e)	int		*a[10];		// 后缀的优先级[ ]  > 指针的优先级*
-f)	int		(*a)[10];
-g)	int		(*a)(int);
-h)	int		(*a[10])(int);
+a) 	int 	a;			//一个整型数变量（An integer） 
+b)	int		*a;			// 一个指向int型的指针变量（A pointer to an integer）
+c)	int		**a;		// a是一个指向指针的指针，它指向的指针是一个整形数 ( A pointer to a pointer to an integer） 
+d)	int		a[10];		// a是一个有10个整形数的数组名；（An array of 10 integers）
+e)	int		*a[10];		// a是一个有10个**指针元素**的数组，该指针指向一个整形数；（An array of 10 pointers to integers） 
+f)	int		(*a)[10];	// a是一个指向10个整形数数组的指针；（A pointer to an array of 10 integers）
+g)	int		(*a)(int);		// a是一个指向函数的指针，该函数有一个整型参数并返回一个整型数；(A pointer to a function that takes an integer as an argument and returns an integer)
+h)	int		(*a[10])(int);		// a是一个有10个指针元素的数组，该指针指向一个函数，该函数有一个整型参数并返回一个整形数；（ An array of ten pointers to functions that take an integer argument and return an integer ）
 ```
 
+## 指针数组，数组指针
+
+### 指针数组
+
++ 它实际上是一个**数组**，数组的每个元素存放的是一个指针类型的元素。
+
+1. 定义一个指针数组？（先数组后指针）
+
+   ```
+   char *arr[4] = {"hello", "world", "shannxi", "xian"}; 
+   // arr 是一个有4个char* 元素的数组；每一个指针存放着对应字符串的首地址；
+   ```
+
+2. 指针数组的初始化？
+
+   ```
+   char *p1 = “hello”，char *p1 = “world”，char *p3 = “shannxi”， char *p4 = “xian”
+   // 定义了四个指针，每个指针指向一个字符串；
+   // arr 就是一个数组，用于保存四个指针元素；arr就成了指针的数组；
+   // arr+1;  相当于跳过四个字节bytes;
+   // sizeof(arr) = 16;
+   ```
+
+### 数组指针
+
++ 它实际上是一个指针，该指针指向一个数组。
+
+1. 定义一个数组指针？
+
+   ```
+   char (*pa)[4];	
+   // pa是一个指针，指向4个char型数组的指针；
+   // 
+   ```
+
+2. pa是存放数组地址的指针；定义一个数组时，数组名称就是这个数组的首地址，那么这二者有什么区别和联系呢？
+
+   ```
+   char (*pa)[4];		// sizeof（pa） =  4;  每一次加1，就跳过4个字节
+   char  pb[4];
+   ```
+
+   + pb是数组**首元素首地址**，pa存放的却是**数组首地址**
+
+     + pb+1；	// pb的地址就是加1byte；
+     + pa+1;     // pa的地址将会加4byte；
+
+   + (1)可以直接将pb赋值给pa吗？
+
+     + 不行，两者操作不同，所以类型不匹配不能直接赋值
+
+     + ```
+       不正确？？？pa = &pb[0];		// 两者都表示首元素的首地址，pa相当与二维数组的行指针，现在它指向a[4]的地址
+       ```
+
+## 传参
+
+### 数组传参数
+
+1. 数组传参时，会退化为指针，所以我们先来看看什么是退化！
+
+1. 指针数组——传参

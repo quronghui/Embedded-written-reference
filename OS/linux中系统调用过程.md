@@ -12,12 +12,12 @@
    3. **进程管理：**用来保证系统中进程能以多任务在虚拟内存环境下得以运行。比如 fork、clone、execve、exit等
    
 2. 系统调用实现过程？
-   + （1）程序调用libc库的API函数；
+   + （1）程序调用libc库的API函数，查找到**系统调用号**；
    + （2）通过汇编指令int 0x80， 调用软中断进入内核；
-   + （3）内核中首先执行system_call 函数；通过SAVE_ALL保存系统调用号（eax）和CPU寄存器到相应的堆栈中；
+   + （3）内核中首先执行system_call 函数；通过SAVE_ALL**保存**系统调用号（eax）和CPU寄存器到相应的堆栈中；
    + 接着根据系统调用号在系统调用表中查找到对应的系统调用服务例程。
-   + （4）执行该服务例程。
-   + （5）执行完毕后，转入ret_from_sys_call 例程，从系统调用返回
+   + （4）**执行该服务例程**。
+   + （5）执行完毕后，转入ret_from_sys_call 例程，从**系统调用返回**
    
    ![ret_sys.png](https://github.com/quronghui/Embedded-written-reference/blob/master/OS/photo/ret_sys.png)
    

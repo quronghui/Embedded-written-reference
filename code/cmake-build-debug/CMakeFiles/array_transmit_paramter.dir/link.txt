@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/array_transmit_paramter.dir/one_array_transmit_paramter.c.o  -o array_transmit_paramter 

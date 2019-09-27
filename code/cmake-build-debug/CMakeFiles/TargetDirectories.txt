@@ -1,0 +1,4 @@
+/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles/code.dir
+/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles/one_array_transmit_paramter.dir

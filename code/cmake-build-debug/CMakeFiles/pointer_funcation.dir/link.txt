@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/pointer_funcation.dir/pointer_funcation.c.o  -o pointer_funcation 

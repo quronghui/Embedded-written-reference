@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named one_array_transmit_paramter
+
+# Build rule for target.
+one_array_transmit_paramter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 one_array_transmit_paramter
+.PHONY : one_array_transmit_paramter
+
+# fast build rule for target.
+one_array_transmit_paramter/fast:
+	$(MAKE) -f CMakeFiles/one_array_transmit_paramter.dir/build.make CMakeFiles/one_array_transmit_paramter.dir/build
+.PHONY : one_array_transmit_paramter/fast
+
+#=============================================================================
+# Target rules for targets named funcation_array
+
+# Build rule for target.
+funcation_array: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 funcation_array
+.PHONY : funcation_array
+
+# fast build rule for target.
+funcation_array/fast:
+	$(MAKE) -f CMakeFiles/funcation_array.dir/build.make CMakeFiles/funcation_array.dir/build
+.PHONY : funcation_array/fast
+
+#=============================================================================
 # Target rules for targets named code
 
 # Build rule for target.
@@ -124,17 +150,97 @@ code/fast:
 .PHONY : code/fast
 
 #=============================================================================
-# Target rules for targets named one_array_transmit_paramter
+# Target rules for targets named double_array_tran_pram
 
 # Build rule for target.
-one_array_transmit_paramter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 one_array_transmit_paramter
-.PHONY : one_array_transmit_paramter
+double_array_tran_pram: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 double_array_tran_pram
+.PHONY : double_array_tran_pram
 
 # fast build rule for target.
-one_array_transmit_paramter/fast:
-	$(MAKE) -f CMakeFiles/one_array_transmit_paramter.dir/build.make CMakeFiles/one_array_transmit_paramter.dir/build
-.PHONY : one_array_transmit_paramter/fast
+double_array_tran_pram/fast:
+	$(MAKE) -f CMakeFiles/double_array_tran_pram.dir/build.make CMakeFiles/double_array_tran_pram.dir/build
+.PHONY : double_array_tran_pram/fast
+
+#=============================================================================
+# Target rules for targets named pointer_funcation
+
+# Build rule for target.
+pointer_funcation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pointer_funcation
+.PHONY : pointer_funcation
+
+# fast build rule for target.
+pointer_funcation/fast:
+	$(MAKE) -f CMakeFiles/pointer_funcation.dir/build.make CMakeFiles/pointer_funcation.dir/build
+.PHONY : pointer_funcation/fast
+
+#=============================================================================
+# Target rules for targets named sizeof_value
+
+# Build rule for target.
+sizeof_value: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sizeof_value
+.PHONY : sizeof_value
+
+# fast build rule for target.
+sizeof_value/fast:
+	$(MAKE) -f CMakeFiles/sizeof_value.dir/build.make CMakeFiles/sizeof_value.dir/build
+.PHONY : sizeof_value/fast
+
+double_array_tran_pram.o: double_array_tran_pram.c.o
+
+.PHONY : double_array_tran_pram.o
+
+# target to build an object file
+double_array_tran_pram.c.o:
+	$(MAKE) -f CMakeFiles/double_array_tran_pram.dir/build.make CMakeFiles/double_array_tran_pram.dir/double_array_tran_pram.c.o
+.PHONY : double_array_tran_pram.c.o
+
+double_array_tran_pram.i: double_array_tran_pram.c.i
+
+.PHONY : double_array_tran_pram.i
+
+# target to preprocess a source file
+double_array_tran_pram.c.i:
+	$(MAKE) -f CMakeFiles/double_array_tran_pram.dir/build.make CMakeFiles/double_array_tran_pram.dir/double_array_tran_pram.c.i
+.PHONY : double_array_tran_pram.c.i
+
+double_array_tran_pram.s: double_array_tran_pram.c.s
+
+.PHONY : double_array_tran_pram.s
+
+# target to generate assembly for a file
+double_array_tran_pram.c.s:
+	$(MAKE) -f CMakeFiles/double_array_tran_pram.dir/build.make CMakeFiles/double_array_tran_pram.dir/double_array_tran_pram.c.s
+.PHONY : double_array_tran_pram.c.s
+
+funcation_array.o: funcation_array.c.o
+
+.PHONY : funcation_array.o
+
+# target to build an object file
+funcation_array.c.o:
+	$(MAKE) -f CMakeFiles/funcation_array.dir/build.make CMakeFiles/funcation_array.dir/funcation_array.c.o
+.PHONY : funcation_array.c.o
+
+funcation_array.i: funcation_array.c.i
+
+.PHONY : funcation_array.i
+
+# target to preprocess a source file
+funcation_array.c.i:
+	$(MAKE) -f CMakeFiles/funcation_array.dir/build.make CMakeFiles/funcation_array.dir/funcation_array.c.i
+.PHONY : funcation_array.c.i
+
+funcation_array.s: funcation_array.c.s
+
+.PHONY : funcation_array.s
+
+# target to generate assembly for a file
+funcation_array.c.s:
+	$(MAKE) -f CMakeFiles/funcation_array.dir/build.make CMakeFiles/funcation_array.dir/funcation_array.c.s
+.PHONY : funcation_array.c.s
 
 main.o: main.c.o
 
@@ -190,6 +296,60 @@ one_array_transmit_paramter.c.s:
 	$(MAKE) -f CMakeFiles/one_array_transmit_paramter.dir/build.make CMakeFiles/one_array_transmit_paramter.dir/one_array_transmit_paramter.c.s
 .PHONY : one_array_transmit_paramter.c.s
 
+pointer_funcation.o: pointer_funcation.c.o
+
+.PHONY : pointer_funcation.o
+
+# target to build an object file
+pointer_funcation.c.o:
+	$(MAKE) -f CMakeFiles/pointer_funcation.dir/build.make CMakeFiles/pointer_funcation.dir/pointer_funcation.c.o
+.PHONY : pointer_funcation.c.o
+
+pointer_funcation.i: pointer_funcation.c.i
+
+.PHONY : pointer_funcation.i
+
+# target to preprocess a source file
+pointer_funcation.c.i:
+	$(MAKE) -f CMakeFiles/pointer_funcation.dir/build.make CMakeFiles/pointer_funcation.dir/pointer_funcation.c.i
+.PHONY : pointer_funcation.c.i
+
+pointer_funcation.s: pointer_funcation.c.s
+
+.PHONY : pointer_funcation.s
+
+# target to generate assembly for a file
+pointer_funcation.c.s:
+	$(MAKE) -f CMakeFiles/pointer_funcation.dir/build.make CMakeFiles/pointer_funcation.dir/pointer_funcation.c.s
+.PHONY : pointer_funcation.c.s
+
+sizeof_value.o: sizeof_value.c.o
+
+.PHONY : sizeof_value.o
+
+# target to build an object file
+sizeof_value.c.o:
+	$(MAKE) -f CMakeFiles/sizeof_value.dir/build.make CMakeFiles/sizeof_value.dir/sizeof_value.c.o
+.PHONY : sizeof_value.c.o
+
+sizeof_value.i: sizeof_value.c.i
+
+.PHONY : sizeof_value.i
+
+# target to preprocess a source file
+sizeof_value.c.i:
+	$(MAKE) -f CMakeFiles/sizeof_value.dir/build.make CMakeFiles/sizeof_value.dir/sizeof_value.c.i
+.PHONY : sizeof_value.c.i
+
+sizeof_value.s: sizeof_value.c.s
+
+.PHONY : sizeof_value.s
+
+# target to generate assembly for a file
+sizeof_value.c.s:
+	$(MAKE) -f CMakeFiles/sizeof_value.dir/build.make CMakeFiles/sizeof_value.dir/sizeof_value.c.s
+.PHONY : sizeof_value.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -197,15 +357,31 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... code"
 	@echo "... one_array_transmit_paramter"
+	@echo "... rebuild_cache"
+	@echo "... funcation_array"
+	@echo "... code"
+	@echo "... double_array_tran_pram"
+	@echo "... pointer_funcation"
+	@echo "... sizeof_value"
+	@echo "... double_array_tran_pram.o"
+	@echo "... double_array_tran_pram.i"
+	@echo "... double_array_tran_pram.s"
+	@echo "... funcation_array.o"
+	@echo "... funcation_array.i"
+	@echo "... funcation_array.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... one_array_transmit_paramter.o"
 	@echo "... one_array_transmit_paramter.i"
 	@echo "... one_array_transmit_paramter.s"
+	@echo "... pointer_funcation.o"
+	@echo "... pointer_funcation.i"
+	@echo "... pointer_funcation.s"
+	@echo "... sizeof_value.o"
+	@echo "... sizeof_value.i"
+	@echo "... sizeof_value.s"
 .PHONY : help
 
 

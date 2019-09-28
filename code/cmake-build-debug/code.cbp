@@ -27,11 +27,91 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="one_array_transmit_paramter">
+				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/one_array_transmit_paramter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 one_array_transmit_paramter"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="one_array_transmit_paramter/fast">
+				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/one_array_transmit_paramter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 one_array_transmit_paramter/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="funcation_array">
+				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/funcation_array" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 funcation_array"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="funcation_array/fast">
+				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/funcation_array" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 funcation_array/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -77,8 +157,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="one_array_transmit_paramter">
-				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/one_array_transmit_paramter" prefix_auto="0" extension_auto="0"/>
+			<Target title="double_array_tran_pram">
+				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/double_array_tran_pram" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -91,14 +171,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 one_array_transmit_paramter"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 double_array_tran_pram"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="one_array_transmit_paramter/fast">
-				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/one_array_transmit_paramter" prefix_auto="0" extension_auto="0"/>
+			<Target title="double_array_tran_pram/fast">
+				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/double_array_tran_pram" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -111,18 +191,110 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 one_array_transmit_paramter/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 double_array_tran_pram/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pointer_funcation">
+				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/pointer_funcation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 pointer_funcation"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pointer_funcation/fast">
+				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/pointer_funcation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 pointer_funcation/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sizeof_value">
+				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/sizeof_value" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 sizeof_value"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sizeof_value/fast">
+				<Option output="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/sizeof_value" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 sizeof_value/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/quronghui/HustFiles/Embedded-written-reference/code/double_array_tran_pram.c">
+			<Option target="double_array_tran_pram"/>
+		</Unit>
+		<Unit filename="/home/quronghui/HustFiles/Embedded-written-reference/code/funcation_array.c">
+			<Option target="funcation_array"/>
+		</Unit>
 		<Unit filename="/home/quronghui/HustFiles/Embedded-written-reference/code/main.c">
 			<Option target="code"/>
 		</Unit>
 		<Unit filename="/home/quronghui/HustFiles/Embedded-written-reference/code/one_array_transmit_paramter.c">
 			<Option target="one_array_transmit_paramter"/>
+		</Unit>
+		<Unit filename="/home/quronghui/HustFiles/Embedded-written-reference/code/pointer_funcation.c">
+			<Option target="pointer_funcation"/>
+		</Unit>
+		<Unit filename="/home/quronghui/HustFiles/Embedded-written-reference/code/sizeof_value.c">
+			<Option target="sizeof_value"/>
 		</Unit>
 		<Unit filename="/home/quronghui/HustFiles/Embedded-written-reference/code/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

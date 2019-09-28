@@ -44,6 +44,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/code.dir/DependInfo.cmake"
   "CMakeFiles/one_array_transmit_paramter.dir/DependInfo.cmake"
+  "CMakeFiles/funcation_array.dir/DependInfo.cmake"
+  "CMakeFiles/code.dir/DependInfo.cmake"
+  "CMakeFiles/double_array_tran_pram.dir/DependInfo.cmake"
+  "CMakeFiles/pointer_funcation.dir/DependInfo.cmake"
+  "CMakeFiles/sizeof_value.dir/DependInfo.cmake"
   )

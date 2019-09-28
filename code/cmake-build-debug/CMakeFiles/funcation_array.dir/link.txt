@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/funcation_array.dir/funcation_array.c.o  -o funcation_array 

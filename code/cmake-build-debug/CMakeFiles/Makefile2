@@ -65,6 +65,80 @@ CMAKE_SOURCE_DIR = /home/quronghui/HustFiles/Embedded-written-reference/code
 CMAKE_BINARY_DIR = /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/one_array_transmit_paramter.dir
+
+# All Build rule for target.
+CMakeFiles/one_array_transmit_paramter.dir/all:
+	$(MAKE) -f CMakeFiles/one_array_transmit_paramter.dir/build.make CMakeFiles/one_array_transmit_paramter.dir/depend
+	$(MAKE) -f CMakeFiles/one_array_transmit_paramter.dir/build.make CMakeFiles/one_array_transmit_paramter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target one_array_transmit_paramter"
+.PHONY : CMakeFiles/one_array_transmit_paramter.dir/all
+
+# Include target in all.
+all: CMakeFiles/one_array_transmit_paramter.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/one_array_transmit_paramter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/one_array_transmit_paramter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/one_array_transmit_paramter.dir/rule
+
+# Convenience name for target.
+one_array_transmit_paramter: CMakeFiles/one_array_transmit_paramter.dir/rule
+
+.PHONY : one_array_transmit_paramter
+
+# clean rule for target.
+CMakeFiles/one_array_transmit_paramter.dir/clean:
+	$(MAKE) -f CMakeFiles/one_array_transmit_paramter.dir/build.make CMakeFiles/one_array_transmit_paramter.dir/clean
+.PHONY : CMakeFiles/one_array_transmit_paramter.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/one_array_transmit_paramter.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/funcation_array.dir
+
+# All Build rule for target.
+CMakeFiles/funcation_array.dir/all:
+	$(MAKE) -f CMakeFiles/funcation_array.dir/build.make CMakeFiles/funcation_array.dir/depend
+	$(MAKE) -f CMakeFiles/funcation_array.dir/build.make CMakeFiles/funcation_array.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target funcation_array"
+.PHONY : CMakeFiles/funcation_array.dir/all
+
+# Include target in all.
+all: CMakeFiles/funcation_array.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/funcation_array.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/funcation_array.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/funcation_array.dir/rule
+
+# Convenience name for target.
+funcation_array: CMakeFiles/funcation_array.dir/rule
+
+.PHONY : funcation_array
+
+# clean rule for target.
+CMakeFiles/funcation_array.dir/clean:
+	$(MAKE) -f CMakeFiles/funcation_array.dir/build.make CMakeFiles/funcation_array.dir/clean
+.PHONY : CMakeFiles/funcation_array.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/funcation_array.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/code.dir
 
 # All Build rule for target.
@@ -102,39 +176,113 @@ clean: CMakeFiles/code.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/one_array_transmit_paramter.dir
+# Target rules for target CMakeFiles/double_array_tran_pram.dir
 
 # All Build rule for target.
-CMakeFiles/one_array_transmit_paramter.dir/all:
-	$(MAKE) -f CMakeFiles/one_array_transmit_paramter.dir/build.make CMakeFiles/one_array_transmit_paramter.dir/depend
-	$(MAKE) -f CMakeFiles/one_array_transmit_paramter.dir/build.make CMakeFiles/one_array_transmit_paramter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target one_array_transmit_paramter"
-.PHONY : CMakeFiles/one_array_transmit_paramter.dir/all
+CMakeFiles/double_array_tran_pram.dir/all:
+	$(MAKE) -f CMakeFiles/double_array_tran_pram.dir/build.make CMakeFiles/double_array_tran_pram.dir/depend
+	$(MAKE) -f CMakeFiles/double_array_tran_pram.dir/build.make CMakeFiles/double_array_tran_pram.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target double_array_tran_pram"
+.PHONY : CMakeFiles/double_array_tran_pram.dir/all
 
 # Include target in all.
-all: CMakeFiles/one_array_transmit_paramter.dir/all
+all: CMakeFiles/double_array_tran_pram.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/one_array_transmit_paramter.dir/rule: cmake_check_build_system
+CMakeFiles/double_array_tran_pram.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/one_array_transmit_paramter.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/double_array_tran_pram.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/one_array_transmit_paramter.dir/rule
+.PHONY : CMakeFiles/double_array_tran_pram.dir/rule
 
 # Convenience name for target.
-one_array_transmit_paramter: CMakeFiles/one_array_transmit_paramter.dir/rule
+double_array_tran_pram: CMakeFiles/double_array_tran_pram.dir/rule
 
-.PHONY : one_array_transmit_paramter
-
-# clean rule for target.
-CMakeFiles/one_array_transmit_paramter.dir/clean:
-	$(MAKE) -f CMakeFiles/one_array_transmit_paramter.dir/build.make CMakeFiles/one_array_transmit_paramter.dir/clean
-.PHONY : CMakeFiles/one_array_transmit_paramter.dir/clean
+.PHONY : double_array_tran_pram
 
 # clean rule for target.
-clean: CMakeFiles/one_array_transmit_paramter.dir/clean
+CMakeFiles/double_array_tran_pram.dir/clean:
+	$(MAKE) -f CMakeFiles/double_array_tran_pram.dir/build.make CMakeFiles/double_array_tran_pram.dir/clean
+.PHONY : CMakeFiles/double_array_tran_pram.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/double_array_tran_pram.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pointer_funcation.dir
+
+# All Build rule for target.
+CMakeFiles/pointer_funcation.dir/all:
+	$(MAKE) -f CMakeFiles/pointer_funcation.dir/build.make CMakeFiles/pointer_funcation.dir/depend
+	$(MAKE) -f CMakeFiles/pointer_funcation.dir/build.make CMakeFiles/pointer_funcation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target pointer_funcation"
+.PHONY : CMakeFiles/pointer_funcation.dir/all
+
+# Include target in all.
+all: CMakeFiles/pointer_funcation.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pointer_funcation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pointer_funcation.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/pointer_funcation.dir/rule
+
+# Convenience name for target.
+pointer_funcation: CMakeFiles/pointer_funcation.dir/rule
+
+.PHONY : pointer_funcation
+
+# clean rule for target.
+CMakeFiles/pointer_funcation.dir/clean:
+	$(MAKE) -f CMakeFiles/pointer_funcation.dir/build.make CMakeFiles/pointer_funcation.dir/clean
+.PHONY : CMakeFiles/pointer_funcation.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pointer_funcation.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sizeof_value.dir
+
+# All Build rule for target.
+CMakeFiles/sizeof_value.dir/all:
+	$(MAKE) -f CMakeFiles/sizeof_value.dir/build.make CMakeFiles/sizeof_value.dir/depend
+	$(MAKE) -f CMakeFiles/sizeof_value.dir/build.make CMakeFiles/sizeof_value.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target sizeof_value"
+.PHONY : CMakeFiles/sizeof_value.dir/all
+
+# Include target in all.
+all: CMakeFiles/sizeof_value.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sizeof_value.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sizeof_value.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/quronghui/HustFiles/Embedded-written-reference/code/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/sizeof_value.dir/rule
+
+# Convenience name for target.
+sizeof_value: CMakeFiles/sizeof_value.dir/rule
+
+.PHONY : sizeof_value
+
+# clean rule for target.
+CMakeFiles/sizeof_value.dir/clean:
+	$(MAKE) -f CMakeFiles/sizeof_value.dir/build.make CMakeFiles/sizeof_value.dir/clean
+.PHONY : CMakeFiles/sizeof_value.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/sizeof_value.dir/clean
 
 .PHONY : clean
 

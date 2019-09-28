@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/sizeof_value.dir/sizeof_value.c.o  -o sizeof_value 

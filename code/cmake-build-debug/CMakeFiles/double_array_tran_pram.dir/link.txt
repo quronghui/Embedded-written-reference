@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/double_array_tran_pram.dir/double_array_tran_pram.c.o  -o double_array_tran_pram 

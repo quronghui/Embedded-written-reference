@@ -1,9 +1,5 @@
 ## linux中系统调用过程？
 
-### 进程的三部分：运行模式、地址空间、上下文
-
-![process_status.png](https://github.com/quronghui/Embedded-written-reference/blob/master/OS/photo/process_status.png)
-
 ### linux中系统调用过程
 
 1. 系统调用的作用？

@@ -4,27 +4,27 @@
   + 是可以和面试官商量时间的：竟可能将时间往后推，方便对复习有利；
   + 除了地点、时间、采用何种方式面试；侧面询问面试考察的方面，以及面试的流程。
 
-## Content
-
 Table of Contents
 =================
 
    * [Embedded-written-reference](#embedded-written-reference)
       * [Content](#content)
+   * [Table of Contents](#table-of-contents)
       * [ARM体系结构](#arm体系结构)
-      * [进程和线程](#进程和线程)
-      * [内存一致性内存管理](#内存一致性内存管理)
+      * [Operation System](#operation-system)
+         * [进程和线程](#进程和线程)
+         * [OS Interrupt](#os-interrupt)
+      * [Memory Management](#memory-management)
+         * [用户空间与内核空间](#用户空间与内核空间)
+         * [Cache 缓存一致性](#cache-缓存一致性)
          * [内存分配](#内存分配)
-         * [内存一致性](#内存一致性)
-         * [内存中的存储问题](#内存中的存储问题)
+      * [Linux Kernel](#linux-kernel)
+         * [linux kernel  start](#linux-kernel--start)
+         * [Linux Kernel](#linux-kernel-1)
+         * [shell](#shell)
       * [Linux 驱动开发](#linux-驱动开发)
          * [硬件相关知识](#硬件相关知识)
          * [linux 驱动模型](#linux-驱动模型)
-         * [Linux 同步和异步](#linux-同步和异步)
-      * [Linux 内核](#linux-内核)
-         * [linux 中断](#linux-中断)
-         * [linux kernel启动](#linux-kernel启动)
-         * [shell](#shell)
       * [嵌入式和C的基础知识](#嵌入式和c的基础知识)
          * [嵌入式](#嵌入式)
          * [基础知识](#基础知识)
@@ -43,54 +43,109 @@ Table of Contents
    + MIPS 体系结构cpu地址空间划分
 7. [OS无锁可以提高整个程序的性能，但是CPU需要对此提供支持，请以x86/ARM为例简述](/8.1Dji大疆/cpu对锁的支持.md)
 
-## 进程和线程
+## Operation System
 
-1. [linux下**进程间通信**的方式？进程间通信为何需要内核？](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
-2. [OS 如何实现进程间上下文的切换?](/8.1Dji大疆/OS如何实现进程间的切换.md)
+### 进程和线程
+
 3. [Linux 多任务, 进程, 线程，协程之间的关系？进程和程序的区别？](/8.1Dji大疆/Linux多任务进程线程之间的关系.md)
 4. [Linux查询进程和线程数量?](/8.1Dji大疆/Linux查询进程和线程数量.md)
 5. [Linux产生僵尸进程的原因？](https://luckywater.top/2019/04/22/system-process/)
-6. [Linux进程调度的算法？](/process/Linux进程调度的算法.md)
-7. [Linux 内核进程调度函数schedule()的触发和执行时机？](/process/schedule()的触发和执行时机.md)
+4. [OS 进程间通信的7种方式？通信为何需要内核？](https://luckywater.top/2019/08/02/进程间通信的几种方式/)
+5. [OS 如何实现进程间上下文切换的机制?](/8.1Dji大疆/OS如何实现进程间的切换.md)
+6. [OS进程调度的算法？](/process/Linux进程调度的算法.md)
+7. [OS **内核进程调度**函数schedule()的触发和执行时机？](/process/schedule()的触发和执行时机.md)
 
-## 内存一致性内存管理
+### OS Interrupt 
 
-### 内存分配
+1. [ISR的定义？中断ISR处理过程的描述?](/8.1Dji大疆/OS中断处理过程的描述.md)
+2. [Linux中断分层和中断嵌套的概念？软中断实现的机制？](/OS/Linux中断分层的概念.md)
+3. [Linux中断信号源软中断, 软件中断 和硬件中断的区别？](/OS/Linux中断之间区别.md)
+   + 软中断和函数调用区别？
+4. [Linux进程上下文切换 VS 中断上下文切换？](/OS/Linux进程上下文切换和中断上下文切换.md)
+   + 缺页中断和中断的区别？
 
-2. [C 简述一个程序在运行时占有的内存布局？各段的空间大小？]( /8.1Dji大疆/OS简述一个执行程序在运行时的内存布局.md)
+OS同步和异步
 
-3. [C函数strcpy，memcpy，sprintf, memset区别和具体实现](/8.1Dji大疆/C函数使用注意.md)
+1. [概念 -- 并发和竞态？阻塞和非阻塞I/O？同步和异步I/O？](/OS/几组概念.md)
+   - I/O的五中模型？AIO的实现机制？
+2. [OS中实现原子的操作？多种锁的区别？自旋锁和互斥锁？](/OS/OS信号量互斥体自旋锁的概念.md)
+3. [RCU(读-复制-更新)的原理？](/OS/Linux中的RCU.md)
+4. [linux**内核**中的 自旋锁 和 内核信号量？内核信号量和用户空间信号量？](/OS/linux内核中的锁和同步机制.md)
+5. [OS 同步和互斥四种方法？临界区/互斥量/信号量/事 件？管程()？](/OS/OS同步机制的实现.md)
+6. [Online Judge:  实现通过循环队列实现循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)、
 
-4. [C 结构体和联合体的**内存字节**对齐计算?](https://luckywater.top/2019/08/02/PragmaPack/)
+## Memory Management
 
-5. [linux中，根据逻辑地址空间，计算页，页表，页表项？](/OS/linux计算页表项大小.md)
+### 用户空间与内核空间
 
-6. [linux **用户空间**中堆内存的分配malloc? 底层mmap内存分配原理? ](/OS/linux内存管理.md)
+1. [OS **用户模式与内核模式**定义，切换，通信?](https://luckywater.top/2019/08/02/linux用户和内核/)
 
-7. [linux**内核空间**中内存分配kmalloc, vmalloc原理？linux 多级分页目录结构？](/OS/linux内核中多级分页目录结构.md)
+   - 内核空间的划分？高端内存定义？
+
+   + [系统调用的具体过程？read系统调用的过程？](/OS/linux中系统调用过程.md)
+
+   + [Linux系统调用函数：copy_from_user的实现原理？和memcpy区别？内核中传递大量数据的方法？](/OS/Linux系统调用函数copy_from_user.md)
+
+2. [linux 根据逻辑地址空间，计算页，页表，页表项？](/OS/linux计算页表项大小.md)
+
+3. [linux **用户空间**内存分配? 底层mmap内存分配原理? ](/OS/linux内存管理.md)
+
+4. [linux**内核空间**中内存分配？linux 多级分页目录结构？](/OS/linux内核中多级分页目录结构.md)
 
    + DMA的原理
 
-8. [在支持并使能MMU的系统中，Linux内核和用户程序运行在物理地址还是虚拟地址？](/OS/Linux内核和用户程序运行在物理地址还是虚拟地址.md)
+5. [在支持并使能MMU的系统中，Linux内核和用户程序运行在物理地址还是虚拟地址？](/OS/Linux内核和用户程序运行在物理地址还是虚拟地址.md)
 
-### 内存一致性
+### Cache 缓存一致性
 
 1. [OS cache缓存一致性描述?](/8.1Dji大疆/OScache缓存一致性描述.md)
 2. [OS cache(页面)多任务调度描述?](/8.1Dji大疆/OScache多任务调度描述.md)
 3. [cache 缓存的意义？缺页中断的概念？](/OS/cache的解析.md)
 4. [OS内存泄漏的理解](/OS/内存泄漏的理解.md)
 
-### 内存中的存储问题
+### 内存分配
 
-1. [OS**内存字节对齐** pragma pack()用法详解?](https://luckywater.top/2019/08/02/PragmaPack/)
+1. [C程序在运行的内存分配？五个段占用的空间大小？]( /8.1Dji大疆/OS简述一个执行程序在运行时的内存布局.md)
+2. [C函数strcpy，memcpy，sprintf,  memset区别和具体实现](/8.1Dji大疆/C函数使用注意.md)
+3. [OS**内存字节对齐** pragma pack()用法详解?](https://luckywater.top/2019/08/02/PragmaPack/)
    + 32位/64位的系统中, 各自的sizeof()是多少?
-2. [OS大端和小端存储问题？OS如何判断并进行转化？](/8.1Dji大疆/大端小端存储问题.md)
-3. [简述处理器CPU , Cache，MMU ，内存之间的关系？](/8.1Dji大疆/OS处理器读取内存的过程.md)
-4. [OS 嵌入式系统中共享资源的访问限制？]( /8.1Dji大疆/OS简述线程之间的同步互斥时占用空间的大小.md)
-6. [Linux下：用户模式与内核模式的定义，切换，通信?](https://luckywater.top/2019/08/02/linux用户和内核/)
-   + 内核空间的划分？高端内存定义？
-6. [linux系统调用的过程？read系统调用的过程？](/OS/linux中系统调用过程.md)
-7. [Linux系统调用函数：copy_from_user的实现原理？和memcpy区别？内核中传递大量数据的方法？](/OS/Linux系统调用函数copy_from_user.md)
+4. [OS大端和小端存储问题？OS如何判断并进行转化？](/8.1Dji大疆/大端小端存储问题.md)
+5. [简述处理器CPU , Cache，MMU ，内存之间的关系？](/8.1Dji大疆/OS处理器读取内存的过程.md)
+6. [OS 嵌入式系统中共享资源的访问限制？]( /8.1Dji大疆/OS简述线程之间的同步互斥时占用空间的大小.md)
+
+## Linux Kernel
+
+### linux kernel  start
+
+1. [U-boot 和 Bootloader引导内核的启动](/OS/Bootloader.md) 
+2. [ARM结构下，Uboot如何给kernel传参数](/OS/Uboot如何给kernel传参数.md)
+3. [Linux内核启动流程?](/OS/Linux内核启动流程.md)
+4. [linux中netfilter的实现机制？是如何实现对特定数据包进行处理(如过滤，NAT之类的)及HOOK点的注册？](/OS/linux中netfilter的实现机制.md)
+5. [ Linux抽象出framebuffer这个设备的作用？](/OS/Linux抽象出framebuffer这个设备的作用.md)
+6. [linux两种错误：kernel panic 和 Oops段错误信息?](/OS/Oops.md)
+
+### Linux Kernel
+
+1. [linux 7种文件类型？](/OS/linux7种文件类型.md) 
+2. [linux**文件系统的目录结构**，选项是/usr、/tmp、/etc目录的作用?](/8.1Dji大疆/linux目录结构.md)
+3. [Linux的具体的命令, 文件和目录的5个操作命令?](/shell/linux文件操作的五个命令.md)
+4. [Linux虚拟文件系统VFS的关键数据结构有哪些？VFS支持多文件系统互通？](/OS/Linux虚拟文件系统的关键数据结构有哪些.md)
+5. [Linux 内核中常用的两个宏定义？offset 和 typeof？](/8.1Dji大疆/linux内核中常用的两个宏定义.md)
+6. [Linux内核的五个子系统？](/OS/Linux内核的五个模块描述.md)
+
+### shell
+
+1. [linux内核版本号，编译器gcc版本号](/shell/linux内核版本号.md)
+2. [echo 重定义 和 grep 正则表达式匹配？](/8.3网易/echo重定义和grep正则表达式匹配.md)
+   - [grep匹配邮件地址](https://luckywater.top/2019/04/25/Regular-Expression/)
+3. [Linux 文件和目录的权限？umask与文件目录的权限关系？](/8.3网易/LInux系统权限.md)
+4. [Linux读取某个文件的某一行或者某几行, 使用sed](/shell/Linux读取某个文件的某一行或者某几行.md)
+5. [Linux 磁盘整体情况](/shell/Linux磁盘整体情况.md)
+6. [Makefile文件的编写?](/shell/Makefile.md)
+7. [linux内核裁剪的方式?](/7.30诺瓦科技/linux内核裁剪的方式.md)
+8. [tar解压一个压缩包，并将原先文件里面的内容覆盖？]
+9. [find 命令的详解？在指点时间内查找修改过的文件？]
+10. [Linux下定时执行脚本？]
 
 ## Linux 驱动开发
 
@@ -119,56 +174,6 @@ Table of Contents
 9. [linux 下的camera驱动V4L2框架](https://luckywater.top/2019/09/04/linux-camera-driver/)
 
 10. [蓝牙的协议GATT](https://luckywater.top/2019/09/05/BLE/#more)
-
-### Linux 同步和异步
-
-1. [概念 -- 并发和竞态？阻塞和非阻塞I/O？同步和异步I/O？](/OS/几组概念.md)
-   + I/O的五中模型？AIO的实现机制？
-2. [OS中实现原子的操作？多种锁的区别？自旋锁和互斥锁？](/OS/OS信号量互斥体自旋锁的概念.md)
-3. [RCU(读-复制-更新)的原理？](/OS/Linux中的RCU.md)
-5. [linux**内核**中的 自旋锁 和 内核信号量？内核信号量和用户空间信号量？](/OS/linux内核中的锁和同步机制.md)
-5. [OS 同步和互斥四种方法？临界区/互斥量/信号量/事 件？管程()？](/OS/OS同步机制的实现.md)
-6. [Online Judge:  实现通过循环队列实现循环缓冲区.](https://github.com/quronghui/DataStructAndAlogrithmCode/blob/master/CompanyWrite/1_Dji/circularReadWrite.c)
-
-## Linux 内核
-
-1. [linux内核裁剪的方式?](/7.30诺瓦科技/linux内核裁剪的方式.md)
-2. [linux 7种文件类型](/OS/linux7种文件类型.md) 
-3. [linux**文件系统的目录结构**，选项是/usr、/tmp、/etc目录的作用?](/8.1Dji大疆/linux目录结构.md)
-4. [Linux虚拟文件系统VFS的关键数据结构有哪些？VFS支持多文件系统互通？](/OS/Linux虚拟文件系统的关键数据结构有哪些.md)
-5. [Linux 内核中常用的两个宏定义？offset 和 typeof？](/8.1Dji大疆/linux内核中常用的两个宏定义.md)
-6. [Linux内核的五个子系统？](/OS/Linux内核的五个模块描述.md)
-7. [Linux的具体的命令, 文件和目录的5个操作命令?](/shell/linux文件操作的五个命令.md)
-
-### linux 中断
-
-1. [中断ISR的定义 和 中断ISR处理过程的描述?](/8.1Dji大疆/OS中断处理过程的描述.md)
-2. [Linux软中断, 软件中断 和硬件中断的区别](/OS/Linux中断之间区别.md)
-3. [Linux中断分层和中断嵌套的概念](/OS/Linux中断分层的概念.md)
-5. [进程上下文切换 VS 中断上下文切换](/OS/Linux进程上下文切换和中断上下文切换.md)
-5. [缺页中断和中断的区别？]
-
-### linux kernel启动
-
-1. [U-boot 和 Bootloader引导内核的启动](/OS/Bootloader.md) 
-2. [ARM结构下，Uboot如何给kernel传参数](/OS/Uboot如何给kernel传参数.md)
-3. [Linux内核启动流程?](/OS/Linux内核启动流程.md)
-4. [linux中netfilter的实现机制？是如何实现对特定数据包进行处理(如过滤，NAT之类的)及HOOK点的注册？](/OS/linux中netfilter的实现机制.md)
-6. [ Linux抽象出framebuffer这个设备的作用？](/OS/Linux抽象出framebuffer这个设备的作用.md)
-7. [linux两种错误：kernel panic 和 Oops段错误信息?](/OS/Oops.md)
-
-### shell
-
-1. [linux内核版本号，编译器gcc版本号](/shell/linux内核版本号.md)
-2. [echo 重定义 和 grep 正则表达式匹配？](/8.3网易/echo重定义和grep正则表达式匹配.md)
-   + [grep匹配邮件地址](https://luckywater.top/2019/04/25/Regular-Expression/)
-3. [Linux 文件和目录的权限？umask与文件目录的权限关系？](/8.3网易/LInux系统权限.md)
-4. [Linux读取某个文件的某一行或者某几行, 使用sed](/shell/Linux读取某个文件的某一行或者某几行.md)
-5. [Linux 磁盘整体情况](/shell/Linux磁盘整体情况.md)
-6. [Makefile文件的编写?](/shell/Makefile.md)
-8. [tar解压一个压缩包，并将原先文件里面的内容覆盖？]
-9. [find 命令的详解？在指点时间内查找修改过的文件？]
-10. [Linux下定时执行脚本？]
 
 ## 嵌入式和C的基础知识
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pointer_funcation.dir/pointer_funcation.c.o"
-  "pointer_funcation.pdb"
   "pointer_funcation"
+  "pointer_funcation.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

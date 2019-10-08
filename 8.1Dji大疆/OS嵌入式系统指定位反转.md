@@ -24,7 +24,7 @@
    ```
    void bit_reverse(uint32_t nbit)
    {
-       *((volatile unsigned int *)0x1F000010) ^= (0x01 << nbit);
+       *((volatile unsigned int *)0x1F000010) ^= (0x01 << nbit);	// (volatile unsigned int *)0x1F000010 相当于强制转换；
    }
    ```
 
@@ -66,12 +66,14 @@
 
    ```
    X=10101110，使X低4位翻转，用X ^0000 1111 = 1010 0001即可得到
+   0 ^1 = 1; 1^1 = 0;
    ```
 
 2. 与0异或：保留原值
 
    ```
    X ^ 00000000 = 1010 1110。
+   0 ^ 0 = 0; 1 ^ 0 = 1;
    ```
 
 3. 异或运算的性质

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/one_array_transmit_paramter.dir/one_array_transmit_paramter.c.o"
-  "one_array_transmit_paramter.pdb"
   "one_array_transmit_paramter"
+  "one_array_transmit_paramter.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

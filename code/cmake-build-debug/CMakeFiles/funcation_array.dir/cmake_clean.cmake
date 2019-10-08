@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/funcation_array.dir/funcation_array.c.o"
-  "funcation_array.pdb"
   "funcation_array"
+  "funcation_array.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

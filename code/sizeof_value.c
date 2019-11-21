@@ -73,8 +73,8 @@ void array_name()
 int main()
 {
     sizeof_test();
-//    sizeof_array_pointer();
-//    array_name();
+    sizeof_array_pointer();
+    array_name();
 
 
 
